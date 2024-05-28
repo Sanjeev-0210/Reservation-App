@@ -1,0 +1,33 @@
+package org.jsp.reservationapi.service;
+
+import org.jsp.reservationapi.dto.ResponseStructure;
+import org.jsp.reservationapi.model.User;
+import org.springframework.http.ResponseEntity;
+
+public class UserService {
+
+	public ResponseEntity<ResponseStructure<User>> save(User user) {
+		return null;
+	}
+
+	public ResponseEntity<ResponseStructure<User>> update(User user) {
+		return null;
+	}
+
+	public ResponseEntity<ResponseStructure<User>> findById(int id) {
+		return null;
+	}
+
+	public ResponseEntity<ResponseStructure<User>> verify(long phone, String password) {
+		return null;
+	}
+
+	public ResponseEntity<ResponseStructure<User>> verify(String email, String password) {
+		return null;
+	}
+
+	public ResponseEntity<ResponseStructure<String>> delete(int id) {
+		return null;
+	}
+
+}

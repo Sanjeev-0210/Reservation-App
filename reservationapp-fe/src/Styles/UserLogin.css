@@ -1,0 +1,33 @@
+.userlogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.userlogin input{
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    margin-top: 10px;
+}
+.userlogin .btn{
+    padding: 5px 18px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.userlogin .btn:hover{
+    background-color: white;
+    border: 1px solid blue;
+    color: black;
+}
+.userlogin form{
+    box-shadow: 0 0 10px black;
+    padding: 30px;
+    border-radius: 10px;
+}.userlogin form h2{
+    margin: 10px;
+}
+.userlogin form p{
+    margin-top: 10px;
+}

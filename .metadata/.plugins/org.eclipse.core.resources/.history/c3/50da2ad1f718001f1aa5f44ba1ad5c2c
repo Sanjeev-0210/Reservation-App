@@ -1,0 +1,12 @@
+package org.jsp.reservationapi.dao;
+
+import org.jsp.reservationapi.model.User;
+
+public class UserDao {
+
+	public User saveUser(User user) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

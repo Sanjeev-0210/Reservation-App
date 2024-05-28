@@ -1,0 +1,12 @@
+package org.jsp.reservationapi.dao;
+
+
+import org.jsp.reservationapi.model.Bus;
+
+public class BusDao {
+
+	public Bus saveBus(Bus bus) {
+		return null;
+	}
+
+}

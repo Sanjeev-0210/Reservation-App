@@ -1,0 +1,16 @@
+package org.jsp.reservationapi.service;
+
+import org.jsp.reservationapi.dto.BusRequest;
+import org.jsp.reservationapi.dto.ResponseStructure;
+import org.jsp.reservationapi.model.Bus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+
+@Service
+public class BusService {
+
+	public ResponseEntity<ResponseStructure<Bus>> saveBus(BusRequest busRequest) {
+		return null;
+	}
+
+}

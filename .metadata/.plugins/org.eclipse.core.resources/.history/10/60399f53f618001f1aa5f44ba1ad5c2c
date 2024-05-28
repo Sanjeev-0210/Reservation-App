@@ -1,0 +1,14 @@
+package org.jsp.reservationapi.service;
+
+import org.jsp.reservationapi.dto.ResponseStructure;
+import org.jsp.reservationapi.model.User;
+import org.springframework.http.ResponseEntity;
+
+public class UserService {
+
+	public ResponseEntity<ResponseStructure<User>> save(User user) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,18 @@
+package org.jsp.reservationapi.model;
+
+import java.util.Date;
+
+import jakarta.persistence.Entity;
+import lombok.Data;
+
+@Entity
+@Data
+public class Bus {
+	private int id;
+	private String name;
+	private Date departure_date;
+	private int bus_no;
+	private String from_loc,to_loc;
+	private int no_of_seats;
+
+}

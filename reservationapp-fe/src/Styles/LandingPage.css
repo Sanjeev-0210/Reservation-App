@@ -1,0 +1,28 @@
+.landingpage{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid rgb(162, 159, 159);
+    border-radius: 20px;
+    width: 38%;
+    padding: 45px 25px;
+    position: relative;
+    top: 25vh;
+    left: 28%;
+    box-shadow: 0 0 10px grey;
+}
+
+.landingpage img{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+}
+.landingpage a{
+    text-decoration: none;
+    color: blue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    transition: 2s;
+}
+.landingpage a:hover{
+    transform: scale(1.05);
+    color: rgb(255, 0, 0);
+}

@@ -1,0 +1,12 @@
+package org.jsp.reservationapi.service;
+
+import org.jsp.reservationapi.model.User;
+
+public class UserService {
+
+	public User save(User user) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

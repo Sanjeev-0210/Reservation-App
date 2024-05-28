@@ -1,0 +1,33 @@
+.adminlogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.adminlogin input{
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    margin-top: 10px;
+}
+.adminlogin .btn{
+    padding: 5px 18px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.adminlogin .btn:hover{
+    background-color: white;
+    border: 1px solid red;
+    color: black;
+}
+.adminlogin form{
+    box-shadow: 0 0 10px black;
+    padding: 30px;
+    border-radius: 10px;
+}.adminlogin form h2{
+    margin: 10px;
+}
+.adminlogin form p{
+    margin-top: 10px;
+}
