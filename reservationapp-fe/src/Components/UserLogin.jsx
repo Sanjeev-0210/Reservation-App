@@ -9,7 +9,7 @@ const UserLogin = () => {
                 <input type="text" placeholder="Enter the username" required/> <br /> <br />
                 <input type="password" placeholder="Enter the password" required/> <br /> <br />
                 <button className='btn btn-primary'>Login</button>
-                <p>Are you new to page? <Link to='/usersignup'> Register here</Link></p> 
+                <p>Didn't have an account? <Link to='/usersignup'> Sign up</Link></p> 
             </form>
         </div>
      );

@@ -1,0 +1,44 @@
+.adminsignup{
+    background-image: url("https://www.apwcroatia.hr/wp-content/uploads/2018/11/background_idea_4_right.png");
+    background-size: cover;
+    height: 100vh;
+    color: white;
+}
+.adminsignup form{
+    display: grid;
+    grid-template-columns: 120px 200px;
+    text-align: left;
+    align-items: center;
+    position: absolute;
+    top: 220px;
+    left: 39%;
+}
+.adminsignup h2{
+    position: relative;
+    top: 170px;
+}
+.adminsignup h2{
+    margin-bottom: 20px;
+}
+.adminsignup input{
+    margin: 10px 0;
+    border: 0;
+    outline: none;
+    color: white;
+    background-color: transparent;
+    border-bottom: 1px inset rgb(255, 255, 255);
+}
+.adminsignup input::placeholder{
+    color: rgb(235, 235, 248);
+}
+/* .btn1 {
+   position: relative;
+   left: 80px;
+   top: 10px;
+   margin-top: 20px;
+}*/
+.btn:hover{
+    background-color: white;
+    border: 1px solid blue;
+    color: black;
+}  
