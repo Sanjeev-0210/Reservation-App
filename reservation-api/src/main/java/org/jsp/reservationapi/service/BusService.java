@@ -37,21 +37,40 @@ public class BusService {
 				.no_of_seats(bus.getNo_of_seats()).admin(bus.getAdmin()).build();
 	}
 
-	public ResponseEntity<ResponseStructure<Bus>> saveBus(BusRequest busRequest, int admin_id) {
+	public ResponseEntity<ResponseStructure<BusResponse>> saveBus(BusRequest busRequest, int admin_id) {
 		Optional<Admin> recAdmin = adminDao.findById(admin_id);
 		if (recAdmin.isPresent()) {
 			Admin admin = recAdmin.get();
-			Bus bus = mapToBus(busRequest); //Converting busrequest to bus
-			bus.setAdmin(admin); // assigning admin to bus
+			busRequest.setAdmin(admin); // assigning admin to bus
 			admin.getBuses().add(mapToBus(busRequest));// Assigning bus to admin
-		ResponseStructure<Bus> structure = new ResponseStructure<>();
+		ResponseStructure<BusResponse> structure = new ResponseStructure<>();
 		structure.setMessage("Bus Saved");
-		structure.setData(busDao.saveBus(mapToBus(busRequest)));
+		Bus dbBus = busDao.saveBus(mapToBus(busRequest));
+		structure.setData(mapToBusResponse(dbBus));//Adding product;
+		adminDao.saveAdmin(admin); //Updating admin
 		structure.setStatusCode(HttpStatus.CREATED.value());
 		return ResponseEntity.status(HttpStatus.CREATED).body(structure);
 		}
 		throw new BusNotFoundException("Can't Saved, Admin Id is not found!!!");
 	}
+	
+//	public ResponseEntity<ResponseStructure<Bus>> saveBus(BusRequest busRequest, int admin_id) {
+//		Optional<Admin> recAdmin = adminDao.findById(admin_id);
+//		if (recAdmin.isPresent()) {
+//			Admin admin = recAdmin.get();
+//			Bus bus = mapToBus(busRequest); //Converting busrequest to bus
+//			bus.setAdmin(admin); // assigning admin to bus
+//			admin.getBuses().add(bus);// Assigning bus to admin
+//		ResponseStructure<Bus> structure = new ResponseStructure<>();
+//		structure.setMessage("Bus Saved");
+//		Bus dbBus = busDao.saveBus(mapToBus(busRequest));//Adding product
+//		adminDao.saveAdmin(admin); //Updating admin
+//		structure.setData(dbBus);
+//		structure.setStatusCode(HttpStatus.CREATED.value());
+//		return ResponseEntity.status(HttpStatus.CREATED).body(structure);
+//		}
+//		throw new BusNotFoundException("Can't Saved, Admin Id is not found!!!");
+//	}
 
 	public ResponseEntity<ResponseStructure<BusResponse>> updateBus(BusRequest busRequest, int id) {
 		ResponseStructure<BusResponse> structure = new ResponseStructure<>();

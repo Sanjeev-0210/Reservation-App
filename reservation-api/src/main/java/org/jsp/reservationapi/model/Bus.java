@@ -3,6 +3,7 @@ package org.jsp.reservationapi.model;
 
 import java.time.LocalDate;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -34,7 +35,7 @@ public class Bus {
 	private String from_loc,to_loc;
 	@Column(nullable = false)
 	private int no_of_seats;
-	@ManyToOne
+	@ManyToOne(cascade = CascadeType.PERSIST)
 	@JoinColumn(name="admin_id")
 	private Admin admin;
 

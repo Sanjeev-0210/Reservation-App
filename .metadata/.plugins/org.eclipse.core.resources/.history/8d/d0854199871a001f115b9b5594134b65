@@ -1,8 +1,0 @@
-package org.jsp.reservationapi.service;
-
-import org.springframework.stereotype.Service;
-
-@Service
-public class BusService {
-
-}

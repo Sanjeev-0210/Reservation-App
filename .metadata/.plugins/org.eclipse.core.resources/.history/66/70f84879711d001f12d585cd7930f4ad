@@ -1,0 +1,20 @@
+package org.jsp.reservationapi.dto;
+
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import lombok.Data;
+
+@Data
+public class UserRequest {
+
+	@NotBlank(message = "Name is Mandatory")
+	private String name;
+	private long phone;
+	@Email
+	private String email;
+	private int age;
+	@NotBlank(message = "Gender is Mandatory")
+	private String gender;
+	@NotBlank(message = "Password is Mandatory")
+	private String password;
+}
