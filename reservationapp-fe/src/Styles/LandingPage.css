@@ -1,3 +1,9 @@
+#landingpage{
+    background-color: rgba(0, 0, 0, 0.181);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
 .landingpage{
     display: flex;
     justify-content: space-around;
@@ -8,7 +14,7 @@
     position: relative;
     top: 25vh;
     left: 28%;
-    box-shadow: 0 0 10px grey;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
 .landingpage img{
@@ -18,11 +24,13 @@
 }
 .landingpage a{
     text-decoration: none;
-    color: blue;
+    color: white;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
     transition: 2s;
 }
 .landingpage a:hover{
     transform: scale(1.05);
     color: rgb(255, 0, 0);
+    text-shadow: 0 0 10px rgb(0, 0, 0);
 }

@@ -1,9 +1,9 @@
-.usersignup{
-    background-image: url("https://www.apwcroatia.hr/wp-content/uploads/2018/11/background_idea_4_right.png");
+/* .usersignup{
+    background-image: url("https://img.lovepik.com/background/20211021/small/lovepik-a-driving-bus-background-image_400149197.jpg");
     background-size: cover;
     height: 100vh;
     color: white;
-}
+} */
 
 .usersignup form{
      display: grid;
@@ -13,6 +13,7 @@
     position: absolute;
     top: 220px;
     left: 39%;
+
 }
 .usersignup h2{
     position: relative;

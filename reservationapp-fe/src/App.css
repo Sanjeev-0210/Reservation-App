@@ -1,8 +1,14 @@
 .App {
   text-align: center;
+  background-image: url("https://www.apwcroatia.hr/wp-content/uploads/2018/11/background_idea_4_right.png");
+    background-size: cover;
+    height: 100vh;
+    color: white;
 }
 
-.App-logo {
+
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +41,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

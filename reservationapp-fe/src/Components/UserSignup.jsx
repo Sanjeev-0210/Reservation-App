@@ -1,22 +1,51 @@
+import { useState } from 'react';
 import '../Styles/UserSignup.css'
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const UserSignup = () => {
+
+    let[name,setname] = useState("");
+    let[email,setemail] = useState("");
+    let[phone,setphone] = useState("");
+    let[age,setage] = useState("");
+    let[gender,setgender] = useState("");
+    let[password,setpassword] = useState("");
+
+    let navigate = useNavigate("")
+
+    let data = {name,email,phone,age,gender,password}
+
+    function usersignup(e){
+        e.preventDefault();
+        axios.post('http://localhost:8080/api/users',data)
+        .then((res)=>{
+            alert("Registered Successfully")
+            console.log(res)
+            navigate('/userlogin')
+        })
+        .catch((err)=>{
+            alert("Registeration Failed!!!")
+            console.log(err);
+        })
+    }
+
     return ( 
         <div className="usersignup">
             <h2>Create Account</h2>
-            <form action="">
+            <form onSubmit={usersignup}>
                 <label>Name: </label>
-                <input type="text" placeholder="Enter your name" required/> 
+                <input value={name} onChange={(e)=>{setname(e.target.value)}} type="text" placeholder="Enter your name" required/> 
                 <label>Email: </label>
-                <input type="email" placeholder="Enter your email id" required/>
+                <input value={email} onChange={(e)=>{setemail(e.target.value)}} type="email" placeholder="Enter your email id" required/>
                 <label>Phone: </label>
-                <input type="tel" placeholder="Enter your phone number" required/>
+                <input value={phone} onChange={(e)=>{setphone(e.target.value)}} type="tel" placeholder="Enter your phone number" required/>
                 <label>Age: </label>
-                <input type="number" placeholder="Enter your GST number" required/>
-                <label >Gender: </label>
+                <input value={age} onChange={(e)=>{setage(e.target.value)}} type="number" placeholder="Enter your age" required/>
+                <label value={gender} onChange={(e)=>{setgender(e.target.value)}}>Gender: </label>
                 <span><input type="radio" name="Gender"/><label > Male </label> <input type="radio" name="Gender"/><label > Female</label></span>
                 <label>Password: </label>
-                <input type="password" placeholder="Enter your password" required/>
+                <input value={password} onChange={(e)=>{setpassword(e.target.value)}} type="password" placeholder="Enter your password" required/>
                 <button>Sign up</button>
             </form>
         </div>

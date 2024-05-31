@@ -57,4 +57,5 @@
     <fullyQualifiedTypeName name="org.jsp.reservationapi.dto.BusRequest"/>
     <fullyQualifiedTypeName name="org.jsp.reservationapi.dto.BusResponse"/>
     <fullyQualifiedTypeName name="jakarta.validation.Valid"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.CrossOrigin"/>
 </qualifiedTypeNameHistroy>
