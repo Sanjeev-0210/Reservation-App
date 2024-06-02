@@ -1,8 +1,8 @@
 .App {
   text-align: center;
-  background-image: url("https://www.apwcroatia.hr/wp-content/uploads/2018/11/background_idea_4_right.png");
+  /* background-image: url("https://www.apwcroatia.hr/wp-content/uploads/2018/11/background_idea_4_right.png"); */
     background-size: cover;
-    height: 100vh;
+    height: 100%;
     color: white;
 }
 

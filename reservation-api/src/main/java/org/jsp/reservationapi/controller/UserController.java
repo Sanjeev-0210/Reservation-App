@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
 
 @CrossOrigin
@@ -27,8 +28,8 @@ public class UserController {
 	private UserService userService;
 	
 	@PostMapping
-	public ResponseEntity<ResponseStructure<UserResponse>>  saveUser(@Valid @RequestBody UserRequest userRequest) {
-		return userService.save(userRequest);
+	public ResponseEntity<ResponseStructure<UserResponse>>  saveUser(@Valid @RequestBody UserRequest userRequest, HttpServletRequest request) {
+		return userService.save(userRequest,request);
 		
 	}
 	
@@ -56,6 +57,11 @@ public class UserController {
 	@DeleteMapping("/{id}")
 	public ResponseEntity<ResponseStructure<String>> delete(@PathVariable int id) {
 		return userService.delete(id);
+	}
+	
+	@GetMapping("/activate")
+	public String activate(@RequestParam String token) {
+		return userService.activate(token);
 	}
 
 }

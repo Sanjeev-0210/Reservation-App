@@ -33,4 +33,8 @@ public class UserDao {
 		return userRepository.deleteById(id);
 	}
 
+	public Optional<User> findByToken(String token) {
+		return userRepository.findByToken(token);		
+	}
+
 }

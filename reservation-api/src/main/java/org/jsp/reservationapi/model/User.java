@@ -32,5 +32,9 @@ public class User {
 	@Column(nullable = false,unique = true)
 	private String password;
 	
+	private String token;
+	@Column(nullable = false)
+	private String status;
+	
 
 }

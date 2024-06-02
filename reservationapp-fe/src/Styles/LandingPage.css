@@ -1,5 +1,6 @@
 #landingpage{
-    background-color: rgba(0, 0, 0, 0.181);
+    /* background-color: rgba(0, 0, 0, 0.181); */
+    background-color: rgb(60, 128, 231);
     position: absolute;
     height: 100%;
     width: 100%;
@@ -32,5 +33,5 @@
 .landingpage a:hover{
     transform: scale(1.05);
     color: rgb(255, 0, 0);
-    text-shadow: 0 0 10px rgb(0, 0, 0);
+    text-shadow: 0 0 10px rgb(255, 255, 255);
 }

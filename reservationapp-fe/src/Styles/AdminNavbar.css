@@ -1,0 +1,15 @@
+.adminnavbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: linear-gradient(rgb(57, 68, 189),rgb(35, 43, 144),rgb(21, 28, 120)) ;
+    border-bottom: 1px solid white;
+}
+.adminnavbar #logo span{
+    color: red;
+    font-weight: 200;
+}
+#logo a{
+    text-decoration: none;
+    color: white;
+}

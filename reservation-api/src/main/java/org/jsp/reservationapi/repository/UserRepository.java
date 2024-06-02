@@ -12,4 +12,6 @@ public interface UserRepository extends JpaRepository<User, Integer> {
 	
 	Optional<User> deleteById(int id);
 
+	Optional<User> findByToken(String token);
+
 }

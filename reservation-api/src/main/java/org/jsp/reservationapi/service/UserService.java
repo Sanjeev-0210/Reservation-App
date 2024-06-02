@@ -13,15 +13,28 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
+import jakarta.servlet.http.HttpServletRequest;
+import net.bytebuddy.utility.RandomString;
+
 @Service
 public class UserService {
 	@Autowired
 	private UserDao userDao;
+	@Autowired
+	private ReservationAPIMailService mailService;
 
-	public ResponseEntity<ResponseStructure<UserResponse>> save(UserRequest userRequest) {
+	public ResponseEntity<ResponseStructure<UserResponse>> save(UserRequest userRequest,HttpServletRequest request) {
+		String url = request.getRequestURL().toString();
+		String path = request.getServletPath();
+		String activation_link = url.replace(path, "/api/users/activate");
 		ResponseStructure<UserResponse> structure = new ResponseStructure<>();
-		structure.setMessage("User saved");
-		User user = userDao.saveUser(mapToUser(userRequest));
+		String token = RandomString.make(12);
+		activation_link+="?token="+token;
+		User user = mapToUser(userRequest);
+		user.setToken(token);
+		user.setStatus("IN_ACTIVE");
+		userDao.saveUser(user);
+		structure.setMessage(mailService.sendMail(token, activation_link));
 		structure.setData(mapToUserResponse(user));
 		structure.setStatusCode(HttpStatus.CREATED.value());
 		return ResponseEntity.status(HttpStatus.CREATED).body(structure);
@@ -95,6 +108,17 @@ public class UserService {
 		throw new UserNotFoundException("Cannot delete User as Id is Invalid");
 	}
 	
+	public String activate(String token) {
+		Optional<User> recUser = userDao.findByToken(token);
+		if(recUser.isEmpty())
+			throw new UserNotFoundException("Invalid Token!!!");
+		User dbUser = recUser.get();
+		dbUser.setToken(null);
+		dbUser.setStatus("ACTIVE");
+		userDao.saveUser(dbUser);
+		return "Your account has been activated!!!";
+	}
+	
 	private User mapToUser(UserRequest userRequest) {
 		return User.builder().name(userRequest.getName()).email(userRequest.getEmail()).phone(userRequest.getPhone()).age(userRequest.getAge())
 				.gender(userRequest.getGender()).password(userRequest.getPassword()).build();
@@ -104,5 +128,7 @@ public class UserService {
 		return UserResponse.builder().name(user.getName()).email(user.getEmail()).phone(user.getPhone()).age(user.getAge())
 				.gender(user.getGender()).password(user.getPassword()).build();
 	}
+
+	
 
 }

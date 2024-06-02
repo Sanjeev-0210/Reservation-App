@@ -34,6 +34,9 @@ public class Admin {
 	private String email;
 	@Column(nullable = false)
 	private String password;
+	private String token;
+	@Column(nullable = false)
+	private String status;
 	
 	@OneToMany(mappedBy = "admin")
 	private List<Bus> buses;

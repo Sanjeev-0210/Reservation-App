@@ -1511,3 +1511,1313 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-30 16:33:27.696
 !MESSAGE Started Boot LS process
+!SESSION 2024-05-31 12:06:23.618 -----------------------------------------------
+eclipse.buildId=4.22.0.202403071427
+java.version=17.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4 -data C:\Users\SANJEEV\Desktop\Reservation-App
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-05-31 12:06:27.195
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-05-31 12:06:27.575
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-05-31 12:06:29.439
+!MESSAGE Logback config file: C:\Users\SANJEEV\Desktop\Reservation-App\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.0.20240217-1525.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-05-31 12:06:30.062
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-05-31 12:06:30.062
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-05-31 12:06:30.563
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-05-31 12:06:30.563
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-05-31 12:06:35.321
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\SANJEEV\Desktop\Software\sts-4.22.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+C:\Users\SANJEEV\Desktop\Software\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\SANJEEV\Desktop\Software\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\SANJEEV\Desktop\Software\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=C:/Users/SANJEEV/Desktop/Reservation-App/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1717137395320
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-31 12:06:35.323
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-05-31 12:06:35.340
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 26960
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-05-31 12:06:36.283
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\SANJEEV'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-31 12:06:36.356
+!MESSAGE Boot project ADDED: reservation-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-31 12:06:36.358
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-31 12:06:36.362
+!MESSAGE Started Boot LS process
+!SESSION 2024-05-31 13:49:59.020 -----------------------------------------------
+eclipse.buildId=4.22.0.202403071427
+java.version=17.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-05-31 13:50:52.971
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-05-31 13:50:53.589
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-05-31 13:51:06.778
+!MESSAGE Logback config file: C:\Users\SANJEEV\Desktop\Reservation-App\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.0.20240217-1525.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-05-31 13:51:08.099
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-05-31 13:51:08.099
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-05-31 13:51:09.241
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-05-31 13:51:09.241
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-05-31 13:51:19.593
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\SANJEEV\Desktop\Software\sts-4.22.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+C:\Users\SANJEEV\Desktop\Software\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\SANJEEV\Desktop\Software\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\SANJEEV\Desktop\Software\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=C:/Users/SANJEEV/Desktop/Reservation-App/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1717143679591
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-31 13:51:19.595
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-05-31 13:51:19.624
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 20884
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-05-31 13:51:22.256
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\SANJEEV'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-31 13:51:22.418
+!MESSAGE Boot project ADDED: reservation-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-31 13:51:22.420
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-31 13:51:22.423
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-31 13:51:22.458
+!MESSAGE Classpath changed for project: reservation-api
+!SESSION 2024-05-31 17:27:04.683 -----------------------------------------------
+eclipse.buildId=4.22.0.202403071427
+java.version=17.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-05-31 17:27:37.988
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-05-31 17:27:38.435
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-05-31 17:27:53.776
+!MESSAGE Logback config file: C:\Users\SANJEEV\Desktop\Reservation-App\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.0.20240217-1525.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-05-31 17:27:54.619
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-05-31 17:27:54.619
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-05-31 17:27:55.152
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-05-31 17:27:55.152
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-05-31 17:28:01.176
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\SANJEEV\Desktop\Software\sts-4.22.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+C:\Users\SANJEEV\Desktop\Software\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\SANJEEV\Desktop\Software\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\SANJEEV\Desktop\Software\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=C:/Users/SANJEEV/Desktop/Reservation-App/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1717156681174
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-31 17:28:01.177
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-05-31 17:28:01.202
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 20864
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-05-31 17:28:02.170
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\SANJEEV'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-31 17:28:02.430
+!MESSAGE Boot project ADDED: reservation-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-31 17:28:02.432
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-31 17:28:02.435
+!MESSAGE Started Boot LS process
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-05-31 17:34:04.758
+!MESSAGE Could not get hover region due to timeout after 1000 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverRegion(LSPTextHover.java:155)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverRegion(CompositeTextHover.java:101)
+	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
+	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:212)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-05-31 17:34:05.364
+!MESSAGE InterruptedException
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverInfo(LSPTextHover.java:76)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverInfo2(CompositeTextHover.java:60)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-31 17:34:33.268
+!MESSAGE Classpath changed for project: reservation-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-31 17:34:33.764
+!MESSAGE Classpath changed for project: reservation-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-31 17:34:37.939
+!MESSAGE Classpath changed for project: reservation-api
+
+!ENTRY org.eclipse.jdt.core 4 4 2024-05-31 17:38:19.592
+!MESSAGE Exception occurred during compilation unit conversion:
+----------------------------------- SOURCE BEGIN -------------------------------------
+package org.jsp.reservationapi.service;
+
+import java.util.Optional;
+
+import org.jsp.reservationapi.dao.AdminDao;
+import org.jsp.reservationapi.dto.AdminRequest;
+import org.jsp.reservationapi.dto.AdminResponse;
+import org.jsp.reservationapi.dto.ResponseStructure;
+import org.jsp.reservationapi.exception.AdminNotFoundException;
+import org.jsp.reservationapi.model.Admin;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+
+import jakarta.servlet.http.HttpServletRequest;
+import net.bytebuddy.utility.RandomString;
+
+@Service
+public class AdminService {
+
+	@Autowired
+	private AdminDao adminDao;
+
+	public ResponseEntity<ResponseStructure<AdminResponse>> saveAdmin(AdminRequest adminRequest,HttpServletRequest request) {
+		String siteUrl = request.getRequestURL().toString();
+		String path = request.getServletPath();
+		String activation_link = siteUrl.replace(path, "/api/admins/activate");
+		ResponseStructure<AdminResponse> structure = new ResponseStructure<>();
+		String token = RandomString.make(15);
+		activation_link+="?token="+token;
+		System.out.println(activation_link);
+		Admin admin = mapToAdmin(adminRequest);
+		admin.setToken(token);
+		admin.setStatus("IN_ACTIVE");
+		adminDao.saveAdmin(admin);
+		structure.setMessage("Admin saved");
+		structure.setData(mapToAdminResponse(admin));
+		structure.setStatusCode(HttpStatus.CREATED.value());
+		return ResponseEntity.status(HttpStatus.CREATED).body(structure);
+	}
+
+	/**
+	 * This method will accept {@link AdminRequest(DTO)} and Admin_Id  and update the Admin in the Database 
+	 * if Identifier is valid
+	 * 
+	 * 
+	 * @param adminRequest
+	 * @param id
+	 * {@return ResponseEntity}
+	 * @throws {@code AdminNotFoundException} if Identifier is Invalid
+	 */
+	
+	public ResponseEntity<ResponseStructure<AdminResponse>> update(AdminRequest adminRequest,int id) {
+		Optional<Admin> recAdmin = adminDao.findById(id);
+		ResponseStructure<AdminResponse> structure = new ResponseStructure<>();
+		if (recAdmin.isPresent()) {
+			Admin dbAdmin = recAdmin.get();
+			dbAdmin.setEmail(adminRequest.getEmail());
+			dbAdmin.setGst_number(adminRequest.getGst_number());
+			dbAdmin.setName(adminRequest.getName());
+			dbAdmin.setPhone(adminRequest.getPhone());
+			dbAdmin.setPassword(adminRequest.getPassword());
+			dbAdmin.setTravels_name(adminRequest.getTravels_name());
+			structure.setData(mapToAdminResponse(adminDao.saveAdmin(dbAdmin)));
+			structure.setMessage("Admin Updated");
+			structure.setStatusCode(HttpStatus.ACCEPTED.value());
+			return ResponseEntity.status(HttpStatus.ACCEPTED).body(structure);
+		}
+		throw new AdminNotFoundException("Cannot Update Admin as Id is Invalid");
+	}
+	
+	public ResponseEntity<ResponseStructure<AdminResponse>> findById(int id) {
+		ResponseStructure<AdminResponse> structure = new ResponseStructure<>();
+		Optional<Admin> dbAdmin = adminDao.findById(id);
+		if (dbAdmin.isPresent()) {
+			structure.setData(mapToAdminResponse(dbAdmin.get()));
+			structure.setMessage("Admin Found");
+			structure.setStatusCode(HttpStatus.OK.value());
+			return ResponseEntity.status(HttpStatus.OK).body(structure);
+		}
+		throw new AdminNotFoundException("Invalid Admin Id");
+	}
+
+	public ResponseEntity<ResponseStructure<AdminResponse>> verify(long phone, String password) {
+		ResponseStructure<AdminResponse> structure = new ResponseStructure<>();
+		Optional<Admin> dbAdmin = adminDao.verify(phone, password);
+		if (dbAdmin.isPresent()) {
+			structure.setData(mapToAdminResponse(dbAdmin.get()));
+			structure.setMessage("Verification Succesfull");
+			structure.setStatusCode(HttpStatus.OK.value());
+			return ResponseEntity.status(HttpStatus.OK).body(structure);
+		}
+		throw new AdminNotFoundException("Invalid Phone Number or Password");
+	}
+	
+	public ResponseEntity<ResponseStructure<AdminResponse>> verify(String email, String password) {
+		ResponseStructure<AdminResponse> structure = new ResponseStructure<>();
+		Optional<Admin> dbAdmin = adminDao.verify(email, password);
+		if (dbAdmin.isPresent()) {
+			structure.setData(mapToAdminResponse(dbAdmin.get()));
+			structure.setMessage("Verification Succesfull");
+			structure.setStatusCode(HttpStatus.OK.value());
+			return ResponseEntity.status(HttpStatus.OK).body(structure);
+		}
+		throw new AdminNotFoundException("Invalid Email Id or Password");
+	}
+
+	public ResponseEntity<ResponseStructure<String>> delete(int id) {
+		ResponseStructure<String> structure = new ResponseStructure<>();
+		Optional<Admin> dbAdmin = adminDao.findById(id);
+		if (dbAdmin.isPresent()) {
+			adminDao.delete(id);
+			structure.setData("Admin Found");
+			structure.setMessage("Admin deleted");
+			structure.setStatusCode(HttpStatus.OK.value());
+			return ResponseEntity.status(HttpStatus.OK).body(structure);
+		}
+		throw new AdminNotFoundException("Cannot delete Admin as Id is Invalid");
+	}
+	
+	public String activate()
+	
+	private Admin mapToAdmin(AdminRequest adminRequest) {
+		return Admin.builder().name(adminRequest.getName()).phone(adminRequest.getPhone()).email(adminRequest.getEmail())
+				.gst_number(adminRequest.getGst_number()).travels_name(adminRequest.getTravels_name()).password(adminRequest.getPassword()).build();
+	}
+	
+	private AdminResponse mapToAdminResponse(Admin admin) {
+		return AdminResponse.builder().name(admin.getName()).phone(admin.getPhone()).email(admin.getEmail())
+				.gst_number(admin.getGst_number()).travels_name(admin.getTravels_name()).password(admin.getPassword()).build();
+	}
+}
+
+----------------------------------- SOURCE END -------------------------------------
+!STACK 0
+java.lang.IllegalArgumentException: startPos = 5075 and length is -30.
+This breaks the rule that lengths are not allowed to be negative. Affected Node:
+class org.eclipse.jdt.core.dom.Block: {
+}
+
+	at lombok.eclipse.agent.PatchDiagnostics.setSourceRangeCheck(PatchDiagnostics.java:36)
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:725)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3477)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1521)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:603)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:245)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:585)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1137)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:169)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:93)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:742)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:808)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1311)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2024-05-31 17:38:19.594
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.IllegalArgumentException: startPos = 5075 and length is -30.
+This breaks the rule that lengths are not allowed to be negative. Affected Node:
+class org.eclipse.jdt.core.dom.Block: {
+}
+
+	at lombok.eclipse.agent.PatchDiagnostics.setSourceRangeCheck(PatchDiagnostics.java:36)
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:725)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3477)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1521)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:603)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:245)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:585)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1137)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:169)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:93)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:742)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:808)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1311)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2024-05-31 17:38:19.596
+!MESSAGE Error in JDT Core during reconcile
+!STACK 0
+java.lang.IllegalArgumentException: startPos = 5075 and length is -30.
+This breaks the rule that lengths are not allowed to be negative. Affected Node:
+class org.eclipse.jdt.core.dom.Block: {
+}
+
+	at lombok.eclipse.agent.PatchDiagnostics.setSourceRangeCheck(PatchDiagnostics.java:36)
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:725)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3477)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1521)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:603)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:245)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:585)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1137)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:169)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:93)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:742)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:808)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1311)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.core 4 4 2024-05-31 17:38:49.114
+!MESSAGE Exception occurred during compilation unit conversion:
+----------------------------------- SOURCE BEGIN -------------------------------------
+package org.jsp.reservationapi.service;
+
+import java.util.Optional;
+
+import org.jsp.reservationapi.dao.AdminDao;
+import org.jsp.reservationapi.dto.AdminRequest;
+import org.jsp.reservationapi.dto.AdminResponse;
+import org.jsp.reservationapi.dto.ResponseStructure;
+import org.jsp.reservationapi.exception.AdminNotFoundException;
+import org.jsp.reservationapi.model.Admin;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+
+import jakarta.servlet.http.HttpServletRequest;
+import net.bytebuddy.utility.RandomString;
+
+@Service
+public class AdminService {
+
+	@Autowired
+	private AdminDao adminDao;
+
+	public ResponseEntity<ResponseStructure<AdminResponse>> saveAdmin(AdminRequest adminRequest,HttpServletRequest request) {
+		String siteUrl = request.getRequestURL().toString();
+		String path = request.getServletPath();
+		String activation_link = siteUrl.replace(path, "/api/admins/activate");
+		ResponseStructure<AdminResponse> structure = new ResponseStructure<>();
+		String token = RandomString.make(15);
+		activation_link+="?token="+token;
+		System.out.println(activation_link);
+		Admin admin = mapToAdmin(adminRequest);
+		admin.setToken(token);
+		admin.setStatus("IN_ACTIVE");
+		adminDao.saveAdmin(admin);
+		structure.setMessage("Admin saved");
+		structure.setData(mapToAdminResponse(admin));
+		structure.setStatusCode(HttpStatus.CREATED.value());
+		return ResponseEntity.status(HttpStatus.CREATED).body(structure);
+	}
+
+	/**
+	 * This method will accept {@link AdminRequest(DTO)} and Admin_Id  and update the Admin in the Database 
+	 * if Identifier is valid
+	 * 
+	 * 
+	 * @param adminRequest
+	 * @param id
+	 * {@return ResponseEntity}
+	 * @throws {@code AdminNotFoundException} if Identifier is Invalid
+	 */
+	
+	public ResponseEntity<ResponseStructure<AdminResponse>> update(AdminRequest adminRequest,int id) {
+		Optional<Admin> recAdmin = adminDao.findById(id);
+		ResponseStructure<AdminResponse> structure = new ResponseStructure<>();
+		if (recAdmin.isPresent()) {
+			Admin dbAdmin = recAdmin.get();
+			dbAdmin.setEmail(adminRequest.getEmail());
+			dbAdmin.setGst_number(adminRequest.getGst_number());
+			dbAdmin.setName(adminRequest.getName());
+			dbAdmin.setPhone(adminRequest.getPhone());
+			dbAdmin.setPassword(adminRequest.getPassword());
+			dbAdmin.setTravels_name(adminRequest.getTravels_name());
+			structure.setData(mapToAdminResponse(adminDao.saveAdmin(dbAdmin)));
+			structure.setMessage("Admin Updated");
+			structure.setStatusCode(HttpStatus.ACCEPTED.value());
+			return ResponseEntity.status(HttpStatus.ACCEPTED).body(structure);
+		}
+		throw new AdminNotFoundException("Cannot Update Admin as Id is Invalid");
+	}
+	
+	public ResponseEntity<ResponseStructure<AdminResponse>> findById(int id) {
+		ResponseStructure<AdminResponse> structure = new ResponseStructure<>();
+		Optional<Admin> dbAdmin = adminDao.findById(id);
+		if (dbAdmin.isPresent()) {
+			structure.setData(mapToAdminResponse(dbAdmin.get()));
+			structure.setMessage("Admin Found");
+			structure.setStatusCode(HttpStatus.OK.value());
+			return ResponseEntity.status(HttpStatus.OK).body(structure);
+		}
+		throw new AdminNotFoundException("Invalid Admin Id");
+	}
+
+	public ResponseEntity<ResponseStructure<AdminResponse>> verify(long phone, String password) {
+		ResponseStructure<AdminResponse> structure = new ResponseStructure<>();
+		Optional<Admin> dbAdmin = adminDao.verify(phone, password);
+		if (dbAdmin.isPresent()) {
+			structure.setData(mapToAdminResponse(dbAdmin.get()));
+			structure.setMessage("Verification Succesfull");
+			structure.setStatusCode(HttpStatus.OK.value());
+			return ResponseEntity.status(HttpStatus.OK).body(structure);
+		}
+		throw new AdminNotFoundException("Invalid Phone Number or Password");
+	}
+	
+	public ResponseEntity<ResponseStructure<AdminResponse>> verify(String email, String password) {
+		ResponseStructure<AdminResponse> structure = new ResponseStructure<>();
+		Optional<Admin> dbAdmin = adminDao.verify(email, password);
+		if (dbAdmin.isPresent()) {
+			structure.setData(mapToAdminResponse(dbAdmin.get()));
+			structure.setMessage("Verification Succesfull");
+			structure.setStatusCode(HttpStatus.OK.value());
+			return ResponseEntity.status(HttpStatus.OK).body(structure);
+		}
+		throw new AdminNotFoundException("Invalid Email Id or Password");
+	}
+
+	public ResponseEntity<ResponseStructure<String>> delete(int id) {
+		ResponseStructure<String> structure = new ResponseStructure<>();
+		Optional<Admin> dbAdmin = adminDao.findById(id);
+		if (dbAdmin.isPresent()) {
+			adminDao.delete(id);
+			structure.setData("Admin Found");
+			structure.setMessage("Admin deleted");
+			structure.setStatusCode(HttpStatus.OK.value());
+			return ResponseEntity.status(HttpStatus.OK).body(structure);
+		}
+		throw new AdminNotFoundException("Cannot delete Admin as Id is Invalid");
+	}
+	
+	public String activate(S)
+	
+	private Admin mapToAdmin(AdminRequest adminRequest) {
+		return Admin.builder().name(adminRequest.getName()).phone(adminRequest.getPhone()).email(adminRequest.getEmail())
+				.gst_number(adminRequest.getGst_number()).travels_name(adminRequest.getTravels_name()).password(adminRequest.getPassword()).build();
+	}
+	
+	private AdminResponse mapToAdminResponse(Admin admin) {
+		return AdminResponse.builder().name(admin.getName()).phone(admin.getPhone()).email(admin.getEmail())
+				.gst_number(admin.getGst_number()).travels_name(admin.getTravels_name()).password(admin.getPassword()).build();
+	}
+}
+
+----------------------------------- SOURCE END -------------------------------------
+!STACK 0
+java.lang.IllegalArgumentException: startPos = 5074 and length is -29.
+This breaks the rule that lengths are not allowed to be negative. Affected Node:
+class org.eclipse.jdt.core.dom.Block: {
+}
+
+	at lombok.eclipse.agent.PatchDiagnostics.setSourceRangeCheck(PatchDiagnostics.java:36)
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:725)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3477)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1521)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:603)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:245)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:585)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1137)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:169)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:93)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:742)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:808)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1311)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2024-05-31 17:38:49.116
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.IllegalArgumentException: startPos = 5074 and length is -29.
+This breaks the rule that lengths are not allowed to be negative. Affected Node:
+class org.eclipse.jdt.core.dom.Block: {
+}
+
+	at lombok.eclipse.agent.PatchDiagnostics.setSourceRangeCheck(PatchDiagnostics.java:36)
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:725)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3477)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1521)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:603)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:245)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:585)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1137)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:169)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:93)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:742)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:808)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1311)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2024-05-31 17:38:49.118
+!MESSAGE Error in JDT Core during reconcile
+!STACK 0
+java.lang.IllegalArgumentException: startPos = 5074 and length is -29.
+This breaks the rule that lengths are not allowed to be negative. Affected Node:
+class org.eclipse.jdt.core.dom.Block: {
+}
+
+	at lombok.eclipse.agent.PatchDiagnostics.setSourceRangeCheck(PatchDiagnostics.java:36)
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:725)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3477)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1521)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:603)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:245)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:585)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1137)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:169)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:93)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:742)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:808)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1311)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.core 4 4 2024-05-31 17:39:05.726
+!MESSAGE Exception occurred during compilation unit conversion:
+----------------------------------- SOURCE BEGIN -------------------------------------
+package org.jsp.reservationapi.service;
+
+import java.util.Optional;
+
+import org.jsp.reservationapi.dao.AdminDao;
+import org.jsp.reservationapi.dto.AdminRequest;
+import org.jsp.reservationapi.dto.AdminResponse;
+import org.jsp.reservationapi.dto.ResponseStructure;
+import org.jsp.reservationapi.exception.AdminNotFoundException;
+import org.jsp.reservationapi.model.Admin;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+
+import jakarta.servlet.http.HttpServletRequest;
+import net.bytebuddy.utility.RandomString;
+
+@Service
+public class AdminService {
+
+	@Autowired
+	private AdminDao adminDao;
+
+	public ResponseEntity<ResponseStructure<AdminResponse>> saveAdmin(AdminRequest adminRequest,HttpServletRequest request) {
+		String siteUrl = request.getRequestURL().toString();
+		String path = request.getServletPath();
+		String activation_link = siteUrl.replace(path, "/api/admins/activate");
+		ResponseStructure<AdminResponse> structure = new ResponseStructure<>();
+		String token = RandomString.make(15);
+		activation_link+="?token="+token;
+		System.out.println(activation_link);
+		Admin admin = mapToAdmin(adminRequest);
+		admin.setToken(token);
+		admin.setStatus("IN_ACTIVE");
+		adminDao.saveAdmin(admin);
+		structure.setMessage("Admin saved");
+		structure.setData(mapToAdminResponse(admin));
+		structure.setStatusCode(HttpStatus.CREATED.value());
+		return ResponseEntity.status(HttpStatus.CREATED).body(structure);
+	}
+
+	/**
+	 * This method will accept {@link AdminRequest(DTO)} and Admin_Id  and update the Admin in the Database 
+	 * if Identifier is valid
+	 * 
+	 * 
+	 * @param adminRequest
+	 * @param id
+	 * {@return ResponseEntity}
+	 * @throws {@code AdminNotFoundException} if Identifier is Invalid
+	 */
+	
+	public ResponseEntity<ResponseStructure<AdminResponse>> update(AdminRequest adminRequest,int id) {
+		Optional<Admin> recAdmin = adminDao.findById(id);
+		ResponseStructure<AdminResponse> structure = new ResponseStructure<>();
+		if (recAdmin.isPresent()) {
+			Admin dbAdmin = recAdmin.get();
+			dbAdmin.setEmail(adminRequest.getEmail());
+			dbAdmin.setGst_number(adminRequest.getGst_number());
+			dbAdmin.setName(adminRequest.getName());
+			dbAdmin.setPhone(adminRequest.getPhone());
+			dbAdmin.setPassword(adminRequest.getPassword());
+			dbAdmin.setTravels_name(adminRequest.getTravels_name());
+			structure.setData(mapToAdminResponse(adminDao.saveAdmin(dbAdmin)));
+			structure.setMessage("Admin Updated");
+			structure.setStatusCode(HttpStatus.ACCEPTED.value());
+			return ResponseEntity.status(HttpStatus.ACCEPTED).body(structure);
+		}
+		throw new AdminNotFoundException("Cannot Update Admin as Id is Invalid");
+	}
+	
+	public ResponseEntity<ResponseStructure<AdminResponse>> findById(int id) {
+		ResponseStructure<AdminResponse> structure = new ResponseStructure<>();
+		Optional<Admin> dbAdmin = adminDao.findById(id);
+		if (dbAdmin.isPresent()) {
+			structure.setData(mapToAdminResponse(dbAdmin.get()));
+			structure.setMessage("Admin Found");
+			structure.setStatusCode(HttpStatus.OK.value());
+			return ResponseEntity.status(HttpStatus.OK).body(structure);
+		}
+		throw new AdminNotFoundException("Invalid Admin Id");
+	}
+
+	public ResponseEntity<ResponseStructure<AdminResponse>> verify(long phone, String password) {
+		ResponseStructure<AdminResponse> structure = new ResponseStructure<>();
+		Optional<Admin> dbAdmin = adminDao.verify(phone, password);
+		if (dbAdmin.isPresent()) {
+			structure.setData(mapToAdminResponse(dbAdmin.get()));
+			structure.setMessage("Verification Succesfull");
+			structure.setStatusCode(HttpStatus.OK.value());
+			return ResponseEntity.status(HttpStatus.OK).body(structure);
+		}
+		throw new AdminNotFoundException("Invalid Phone Number or Password");
+	}
+	
+	public ResponseEntity<ResponseStructure<AdminResponse>> verify(String email, String password) {
+		ResponseStructure<AdminResponse> structure = new ResponseStructure<>();
+		Optional<Admin> dbAdmin = adminDao.verify(email, password);
+		if (dbAdmin.isPresent()) {
+			structure.setData(mapToAdminResponse(dbAdmin.get()));
+			structure.setMessage("Verification Succesfull");
+			structure.setStatusCode(HttpStatus.OK.value());
+			return ResponseEntity.status(HttpStatus.OK).body(structure);
+		}
+		throw new AdminNotFoundException("Invalid Email Id or Password");
+	}
+
+	public ResponseEntity<ResponseStructure<String>> delete(int id) {
+		ResponseStructure<String> structure = new ResponseStructure<>();
+		Optional<Admin> dbAdmin = adminDao.findById(id);
+		if (dbAdmin.isPresent()) {
+			adminDao.delete(id);
+			structure.setData("Admin Found");
+			structure.setMessage("Admin deleted");
+			structure.setStatusCode(HttpStatus.OK.value());
+			return ResponseEntity.status(HttpStatus.OK).body(structure);
+		}
+		throw new AdminNotFoundException("Cannot delete Admin as Id is Invalid");
+	}
+	
+	public String activate(String)
+	
+	private Admin mapToAdmin(AdminRequest adminRequest) {
+		return Admin.builder().name(adminRequest.getName()).phone(adminRequest.getPhone()).email(adminRequest.getEmail())
+				.gst_number(adminRequest.getGst_number()).travels_name(adminRequest.getTravels_name()).password(adminRequest.getPassword()).build();
+	}
+	
+	private AdminResponse mapToAdminResponse(Admin admin) {
+		return AdminResponse.builder().name(admin.getName()).phone(admin.getPhone()).email(admin.getEmail())
+				.gst_number(admin.getGst_number()).travels_name(admin.getTravels_name()).password(admin.getPassword()).build();
+	}
+}
+
+----------------------------------- SOURCE END -------------------------------------
+!STACK 0
+java.lang.IllegalArgumentException: startPos = 5074 and length is -29.
+This breaks the rule that lengths are not allowed to be negative. Affected Node:
+class org.eclipse.jdt.core.dom.Block: {
+}
+
+	at lombok.eclipse.agent.PatchDiagnostics.setSourceRangeCheck(PatchDiagnostics.java:36)
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:725)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3477)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1521)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:603)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:245)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:585)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1137)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:169)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:93)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:742)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:808)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1311)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2024-05-31 17:39:05.728
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.IllegalArgumentException: startPos = 5074 and length is -29.
+This breaks the rule that lengths are not allowed to be negative. Affected Node:
+class org.eclipse.jdt.core.dom.Block: {
+}
+
+	at lombok.eclipse.agent.PatchDiagnostics.setSourceRangeCheck(PatchDiagnostics.java:36)
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:725)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3477)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1521)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:603)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:245)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:585)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1137)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:169)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:93)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:742)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:808)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1311)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2024-05-31 17:39:05.730
+!MESSAGE Error in JDT Core during reconcile
+!STACK 0
+java.lang.IllegalArgumentException: startPos = 5074 and length is -29.
+This breaks the rule that lengths are not allowed to be negative. Affected Node:
+class org.eclipse.jdt.core.dom.Block: {
+}
+
+	at lombok.eclipse.agent.PatchDiagnostics.setSourceRangeCheck(PatchDiagnostics.java:36)
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:725)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3477)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1521)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:603)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:245)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:585)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1137)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:169)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:93)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:742)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:808)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1311)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.core 4 4 2024-05-31 17:39:07.942
+!MESSAGE Exception occurred during compilation unit conversion:
+----------------------------------- SOURCE BEGIN -------------------------------------
+package org.jsp.reservationapi.service;
+
+import java.util.Optional;
+
+import org.jsp.reservationapi.dao.AdminDao;
+import org.jsp.reservationapi.dto.AdminRequest;
+import org.jsp.reservationapi.dto.AdminResponse;
+import org.jsp.reservationapi.dto.ResponseStructure;
+import org.jsp.reservationapi.exception.AdminNotFoundException;
+import org.jsp.reservationapi.model.Admin;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+
+import jakarta.servlet.http.HttpServletRequest;
+import net.bytebuddy.utility.RandomString;
+
+@Service
+public class AdminService {
+
+	@Autowired
+	private AdminDao adminDao;
+
+	public ResponseEntity<ResponseStructure<AdminResponse>> saveAdmin(AdminRequest adminRequest,HttpServletRequest request) {
+		String siteUrl = request.getRequestURL().toString();
+		String path = request.getServletPath();
+		String activation_link = siteUrl.replace(path, "/api/admins/activate");
+		ResponseStructure<AdminResponse> structure = new ResponseStructure<>();
+		String token = RandomString.make(15);
+		activation_link+="?token="+token;
+		System.out.println(activation_link);
+		Admin admin = mapToAdmin(adminRequest);
+		admin.setToken(token);
+		admin.setStatus("IN_ACTIVE");
+		adminDao.saveAdmin(admin);
+		structure.setMessage("Admin saved");
+		structure.setData(mapToAdminResponse(admin));
+		structure.setStatusCode(HttpStatus.CREATED.value());
+		return ResponseEntity.status(HttpStatus.CREATED).body(structure);
+	}
+
+	/**
+	 * This method will accept {@link AdminRequest(DTO)} and Admin_Id  and update the Admin in the Database 
+	 * if Identifier is valid
+	 * 
+	 * 
+	 * @param adminRequest
+	 * @param id
+	 * {@return ResponseEntity}
+	 * @throws {@code AdminNotFoundException} if Identifier is Invalid
+	 */
+	
+	public ResponseEntity<ResponseStructure<AdminResponse>> update(AdminRequest adminRequest,int id) {
+		Optional<Admin> recAdmin = adminDao.findById(id);
+		ResponseStructure<AdminResponse> structure = new ResponseStructure<>();
+		if (recAdmin.isPresent()) {
+			Admin dbAdmin = recAdmin.get();
+			dbAdmin.setEmail(adminRequest.getEmail());
+			dbAdmin.setGst_number(adminRequest.getGst_number());
+			dbAdmin.setName(adminRequest.getName());
+			dbAdmin.setPhone(adminRequest.getPhone());
+			dbAdmin.setPassword(adminRequest.getPassword());
+			dbAdmin.setTravels_name(adminRequest.getTravels_name());
+			structure.setData(mapToAdminResponse(adminDao.saveAdmin(dbAdmin)));
+			structure.setMessage("Admin Updated");
+			structure.setStatusCode(HttpStatus.ACCEPTED.value());
+			return ResponseEntity.status(HttpStatus.ACCEPTED).body(structure);
+		}
+		throw new AdminNotFoundException("Cannot Update Admin as Id is Invalid");
+	}
+	
+	public ResponseEntity<ResponseStructure<AdminResponse>> findById(int id) {
+		ResponseStructure<AdminResponse> structure = new ResponseStructure<>();
+		Optional<Admin> dbAdmin = adminDao.findById(id);
+		if (dbAdmin.isPresent()) {
+			structure.setData(mapToAdminResponse(dbAdmin.get()));
+			structure.setMessage("Admin Found");
+			structure.setStatusCode(HttpStatus.OK.value());
+			return ResponseEntity.status(HttpStatus.OK).body(structure);
+		}
+		throw new AdminNotFoundException("Invalid Admin Id");
+	}
+
+	public ResponseEntity<ResponseStructure<AdminResponse>> verify(long phone, String password) {
+		ResponseStructure<AdminResponse> structure = new ResponseStructure<>();
+		Optional<Admin> dbAdmin = adminDao.verify(phone, password);
+		if (dbAdmin.isPresent()) {
+			structure.setData(mapToAdminResponse(dbAdmin.get()));
+			structure.setMessage("Verification Succesfull");
+			structure.setStatusCode(HttpStatus.OK.value());
+			return ResponseEntity.status(HttpStatus.OK).body(structure);
+		}
+		throw new AdminNotFoundException("Invalid Phone Number or Password");
+	}
+	
+	public ResponseEntity<ResponseStructure<AdminResponse>> verify(String email, String password) {
+		ResponseStructure<AdminResponse> structure = new ResponseStructure<>();
+		Optional<Admin> dbAdmin = adminDao.verify(email, password);
+		if (dbAdmin.isPresent()) {
+			structure.setData(mapToAdminResponse(dbAdmin.get()));
+			structure.setMessage("Verification Succesfull");
+			structure.setStatusCode(HttpStatus.OK.value());
+			return ResponseEntity.status(HttpStatus.OK).body(structure);
+		}
+		throw new AdminNotFoundException("Invalid Email Id or Password");
+	}
+
+	public ResponseEntity<ResponseStructure<String>> delete(int id) {
+		ResponseStructure<String> structure = new ResponseStructure<>();
+		Optional<Admin> dbAdmin = adminDao.findById(id);
+		if (dbAdmin.isPresent()) {
+			adminDao.delete(id);
+			structure.setData("Admin Found");
+			structure.setMessage("Admin deleted");
+			structure.setStatusCode(HttpStatus.OK.value());
+			return ResponseEntity.status(HttpStatus.OK).body(structure);
+		}
+		throw new AdminNotFoundException("Cannot delete Admin as Id is Invalid");
+	}
+	
+	public String activate(String token)
+	
+	private Admin mapToAdmin(AdminRequest adminRequest) {
+		return Admin.builder().name(adminRequest.getName()).phone(adminRequest.getPhone()).email(adminRequest.getEmail())
+				.gst_number(adminRequest.getGst_number()).travels_name(adminRequest.getTravels_name()).password(adminRequest.getPassword()).build();
+	}
+	
+	private AdminResponse mapToAdminResponse(Admin admin) {
+		return AdminResponse.builder().name(admin.getName()).phone(admin.getPhone()).email(admin.getEmail())
+				.gst_number(admin.getGst_number()).travels_name(admin.getTravels_name()).password(admin.getPassword()).build();
+	}
+}
+
+----------------------------------- SOURCE END -------------------------------------
+!STACK 0
+java.lang.IllegalArgumentException: startPos = 5087 and length is -42.
+This breaks the rule that lengths are not allowed to be negative. Affected Node:
+class org.eclipse.jdt.core.dom.Block: {
+}
+
+	at lombok.eclipse.agent.PatchDiagnostics.setSourceRangeCheck(PatchDiagnostics.java:36)
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:725)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3477)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1521)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:603)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:245)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:585)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1137)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:169)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:93)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:742)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:808)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1311)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2024-05-31 17:39:07.944
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.IllegalArgumentException: startPos = 5087 and length is -42.
+This breaks the rule that lengths are not allowed to be negative. Affected Node:
+class org.eclipse.jdt.core.dom.Block: {
+}
+
+	at lombok.eclipse.agent.PatchDiagnostics.setSourceRangeCheck(PatchDiagnostics.java:36)
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:725)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3477)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1521)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:603)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:245)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:585)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1137)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:169)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:93)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:742)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:808)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1311)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2024-05-31 17:39:07.946
+!MESSAGE Error in JDT Core during reconcile
+!STACK 0
+java.lang.IllegalArgumentException: startPos = 5087 and length is -42.
+This breaks the rule that lengths are not allowed to be negative. Affected Node:
+class org.eclipse.jdt.core.dom.Block: {
+}
+
+	at lombok.eclipse.agent.PatchDiagnostics.setSourceRangeCheck(PatchDiagnostics.java:36)
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:725)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3477)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1521)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:603)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:245)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:585)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1137)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:169)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:93)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:742)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:808)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1311)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-31 17:45:06.382
+!MESSAGE Classpath changed for project: reservation-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-31 17:45:06.540
+!MESSAGE Classpath changed for project: reservation-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-31 17:45:11.476
+!MESSAGE Classpath changed for project: reservation-api
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-05-31 17:56:59.668
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+!SESSION 2024-06-02 09:28:12.732 -----------------------------------------------
+eclipse.buildId=4.22.0.202403071427
+java.version=17.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-06-02 09:28:17.136
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-02 09:28:17.647
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-02 09:28:23.703
+!MESSAGE Logback config file: C:\Users\SANJEEV\Desktop\Reservation-App\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.0.20240217-1525.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-06-02 09:28:24.611
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-06-02 09:28:24.611
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-06-02 09:28:25.340
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-06-02 09:28:25.340
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-02 09:28:31.596
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\SANJEEV\Desktop\Software\sts-4.22.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+C:\Users\SANJEEV\Desktop\Software\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\SANJEEV\Desktop\Software\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\SANJEEV\Desktop\Software\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=C:/Users/SANJEEV/Desktop/Reservation-App/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1717300711594
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-02 09:28:31.598
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-02 09:28:31.629
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 22724
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-06-02 09:28:33.863
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\SANJEEV'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-02 09:28:33.955
+!MESSAGE Boot project ADDED: reservation-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-02 09:28:33.957
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-02 09:28:33.963
+!MESSAGE Started Boot LS process
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-06-02 09:28:37.451
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
