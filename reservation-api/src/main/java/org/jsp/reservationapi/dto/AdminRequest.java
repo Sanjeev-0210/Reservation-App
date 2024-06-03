@@ -11,7 +11,7 @@ import lombok.Data;
 
 @Data
 public class AdminRequest {
-	
+	private int id;
 	@NotBlank(message = "Name is Mandatory")
 	private String name;
 	private long phone;

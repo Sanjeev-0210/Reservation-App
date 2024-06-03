@@ -27,9 +27,9 @@ public class BusController {
 	@Autowired
 	private BusService busService;
 	
-	@PostMapping("/{admin_email}")
-	public ResponseEntity<ResponseStructure<BusResponse>>  saveBus(@RequestBody BusRequest busRequest,@PathVariable(name="admin_email") String admin_email){
-		return busService.saveBus(busRequest,admin_email);
+	@PostMapping("/{admin_id}")
+	public ResponseEntity<ResponseStructure<BusResponse>>  saveBus(@RequestBody BusRequest busRequest,@PathVariable(name="admin_id") int admin_id){
+		return busService.saveBus(busRequest,admin_id);
 	}
 	
 	@PutMapping("/{id}")

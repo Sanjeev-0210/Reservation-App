@@ -19,7 +19,7 @@ const AddBus = () => {
 
     function addbus(e){
         e.preventDefault();
-        axios.post(`http://localhost:8080/api/bus/${admin.email}`,busdata)
+        axios.post(`http://localhost:8080/api/bus/${admin.id}`,busdata)
         .then((res)=>{
             alert("Bus has been Added Successfully!!!")
             console.log(res.data);

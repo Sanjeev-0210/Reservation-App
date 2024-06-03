@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="org.apache.catalina.User"/>
-    <fullyQualifiedTypeName name="org.jsp.reservationapi.model.User"/>
-    <fullyQualifiedTypeName name="org.jsp.reservationapi.dto.AdminRequest"/>
-    <fullyQualifiedTypeName name="org.jsp.reservationapi.repository.UserRepository"/>
-    <fullyQualifiedTypeName name="jakarta.persistence.Entity"/>
-    <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="jakarta.persistence.Id"/>
     <fullyQualifiedTypeName name="jakarta.persistence.GeneratedValue"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
@@ -29,8 +23,6 @@
     <fullyQualifiedTypeName name="jakarta.persistence.ManyToOne"/>
     <fullyQualifiedTypeName name="jakarta.persistence.JoinColumn"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
-    <fullyQualifiedTypeName name="org.jsp.reservationapi.dao.AdminDao"/>
-    <fullyQualifiedTypeName name="org.jsp.reservationapi.model.Admin"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="org.jsp.reservationapi.model.Bus"/>
     <fullyQualifiedTypeName name="org.jsp.reservationapi.dto.AdminResponse"/>
@@ -39,7 +31,6 @@
     <fullyQualifiedTypeName name="lombok.Builder"/>
     <fullyQualifiedTypeName name="org.jsp.reservationapi.dto.UserRequest"/>
     <fullyQualifiedTypeName name="org.jsp.reservationapi.dto.UserResponse"/>
-    <fullyQualifiedTypeName name="lombok.Data"/>
     <fullyQualifiedTypeName name="jakarta.validation.constraints.Size"/>
     <fullyQualifiedTypeName name="jakarta.validation.constraints.Email"/>
     <fullyQualifiedTypeName name="jakarta.validation.constraints.NotBlank"/>
@@ -48,16 +39,25 @@
     <fullyQualifiedTypeName name="org.jsp.reservationapi.dto.BusResponse"/>
     <fullyQualifiedTypeName name="jakarta.validation.Valid"/>
     <fullyQualifiedTypeName name="org.jsp.reservationapi.exception.AdminNotFoundException"/>
-    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
     <fullyQualifiedTypeName name="org.springframework.mail.javamail.JavaMailSender"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
     <fullyQualifiedTypeName name="org.jsp.reservationapi.exception.UserNotFoundException"/>
     <fullyQualifiedTypeName name="org.jsp.reservationapi.service.ReservationAPIMailService"/>
-    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
-    <fullyQualifiedTypeName name="jakarta.servlet.http.HttpServletRequest"/>
     <fullyQualifiedTypeName name="org.springframework.mail.SimpleMailMessage"/>
-    <fullyQualifiedTypeName name="net.bytebuddy.utility.RandomString"/>
     <fullyQualifiedTypeName name="jakarta.persistence.Column"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.CrossOrigin"/>
+    <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonIgnore"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+    <fullyQualifiedTypeName name="lombok.Data"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="org.jsp.reservationapi.dao.AdminDao"/>
+    <fullyQualifiedTypeName name="org.jsp.reservationapi.model.Admin"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.http.HttpServletRequest"/>
+    <fullyQualifiedTypeName name="net.bytebuddy.utility.RandomString"/>
+    <fullyQualifiedTypeName name="org.jsp.reservationapi.service.LinkGenerationService"/>
+    <fullyQualifiedTypeName name="org.jsp.reservationapi.util.AccountStatus"/>
+    <fullyQualifiedTypeName name="org.jsp.reservationapi.dto.EmailConfiguration"/>
+    <fullyQualifiedTypeName name="org.jsp.reservationapi.dao.UserDao"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 </qualifiedTypeNameHistroy>

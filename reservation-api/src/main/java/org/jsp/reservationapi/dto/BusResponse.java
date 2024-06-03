@@ -15,6 +15,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class BusResponse {
 
+	private int id;
 	private String name;
 	private LocalDate departure_date;
 	private String bus_no;

@@ -26,28 +26,29 @@ public class BusService {
 	private AdminDao adminDao;
 
 	private Bus mapToBus(BusRequest busRequest) {
-		return Bus.builder().name(busRequest.getName()).departure_date(busRequest.getDeparture_date())
+		return Bus.builder().id(busRequest.getId()).name(busRequest.getName()).departure_date(busRequest.getDeparture_date())
 				.bus_no(busRequest.getBus_no()).from_loc(busRequest.getFrom_loc()).to_loc(busRequest.getTo_loc())
 				.no_of_seats(busRequest.getNo_of_seats()).admin(busRequest.getAdmin()).build();
 	}
 	
 	private BusResponse mapToBusResponse(Bus bus) {
-		return BusResponse.builder().name(bus.getName()).departure_date(bus.getDeparture_date())
+		return BusResponse.builder().id(bus.getId()).name(bus.getName()).departure_date(bus.getDeparture_date())
 				.bus_no(bus.getBus_no()).from_loc(bus.getFrom_loc()).to_loc(bus.getTo_loc())
 				.no_of_seats(bus.getNo_of_seats()).admin(bus.getAdmin()).build();
 	}
 
-	public ResponseEntity<ResponseStructure<BusResponse>> saveBus(BusRequest busRequest, String admin_email) {
-		Optional<Admin> recAdmin = adminDao.findByEmail(admin_email);
+	public ResponseEntity<ResponseStructure<BusResponse>> saveBus(BusRequest busRequest, int admin_id) {
+		Optional<Admin> recAdmin = adminDao.findById(admin_id);
 		if (recAdmin.isPresent()) {
 			Admin admin = recAdmin.get();
-			busRequest.setAdmin(admin); // assigning admin to bus
-			admin.getBuses().add(mapToBus(busRequest));// Assigning bus to admin
+			Bus bus = mapToBus(busRequest);//map busrequest to bus
+			bus.setAdmin(admin); // assigning admin to bus
+			admin.getBuses().add(bus);// Assigning bus to admin
 		ResponseStructure<BusResponse> structure = new ResponseStructure<>();
 		structure.setMessage("Bus Saved");
-		Bus dbBus = busDao.saveBus(mapToBus(busRequest));
-		structure.setData(mapToBusResponse(dbBus));//Adding product;
+		Bus dbBus = busDao.saveBus(bus);
 		adminDao.saveAdmin(admin); //Updating admin
+		structure.setData(mapToBusResponse(dbBus));//Adding product;
 		structure.setStatusCode(HttpStatus.CREATED.value());
 		return ResponseEntity.status(HttpStatus.CREATED).body(structure);
 		}
