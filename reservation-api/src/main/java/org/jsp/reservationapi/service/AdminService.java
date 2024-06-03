@@ -5,9 +5,11 @@ import java.util.Optional;
 import org.jsp.reservationapi.dao.AdminDao;
 import org.jsp.reservationapi.dto.AdminRequest;
 import org.jsp.reservationapi.dto.AdminResponse;
+import org.jsp.reservationapi.dto.EmailConfiguration;
 import org.jsp.reservationapi.dto.ResponseStructure;
 import org.jsp.reservationapi.exception.AdminNotFoundException;
 import org.jsp.reservationapi.model.Admin;
+import org.jsp.reservationapi.util.AccountStatus;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -24,20 +26,21 @@ public class AdminService {
 	
 	@Autowired
 	private ReservationAPIMailService mailService;
+	@Autowired
+	private EmailConfiguration emailConfiguration;
+	@Autowired
+	private LinkGenerationService linkGenerationService;
 
 	public ResponseEntity<ResponseStructure<AdminResponse>> saveAdmin(AdminRequest adminRequest,HttpServletRequest request) {
-		String siteUrl = request.getRequestURL().toString();
-		String path = request.getServletPath();
-		String activation_link = siteUrl.replace(path, "/api/admins/activate");
 		ResponseStructure<AdminResponse> structure = new ResponseStructure<>();
-		String token = RandomString.make(15);
-		activation_link+="?token="+token;
-		System.out.println(activation_link);
 		Admin admin = mapToAdmin(adminRequest);
-		admin.setToken(token);
-		admin.setStatus("IN_ACTIVE");
+		admin.setStatus(AccountStatus.IN_ACTIVE.toString());
 		adminDao.saveAdmin(admin);
-		structure.setMessage(mailService.sendMail(admin.getEmail(), activation_link));
+		String activation_link = linkGenerationService.getActivationLink(admin, request);
+		emailConfiguration.setSubject("Activate Your Account");
+		emailConfiguration.setToAddress(admin.getEmail());
+		emailConfiguration.setText("Dear Admin, Please Activate your Account by clicking on the following Link: "+activation_link);
+		structure.setMessage(mailService.sendMail(emailConfiguration));
 		structure.setData(mapToAdminResponse(admin));
 		structure.setStatusCode(HttpStatus.CREATED.value());
 		return ResponseEntity.status(HttpStatus.CREATED).body(structure);

@@ -3,11 +3,13 @@ package org.jsp.reservationapi.service;
 import java.util.Optional;
 
 import org.jsp.reservationapi.dao.UserDao;
+import org.jsp.reservationapi.dto.EmailConfiguration;
 import org.jsp.reservationapi.dto.ResponseStructure;
 import org.jsp.reservationapi.dto.UserRequest;
 import org.jsp.reservationapi.dto.UserResponse;
 import org.jsp.reservationapi.exception.UserNotFoundException;
 import org.jsp.reservationapi.model.User;
+import org.jsp.reservationapi.util.AccountStatus;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -22,19 +24,21 @@ public class UserService {
 	private UserDao userDao;
 	@Autowired
 	private ReservationAPIMailService mailService;
+	@Autowired
+	private EmailConfiguration emailConfiguration;
+	@Autowired
+	private LinkGenerationService linkGenerationService;
 
 	public ResponseEntity<ResponseStructure<UserResponse>> save(UserRequest userRequest,HttpServletRequest request) {
-		String url = request.getRequestURL().toString();
-		String path = request.getServletPath();
-		String activation_link = url.replace(path, "/api/users/activate");
 		ResponseStructure<UserResponse> structure = new ResponseStructure<>();
-		String token = RandomString.make(12);
-		activation_link+="?token="+token;
 		User user = mapToUser(userRequest);
-		user.setToken(token);
-		user.setStatus("IN_ACTIVE");
+		user.setStatus(AccountStatus.IN_ACTIVE.toString());
 		userDao.saveUser(user);
-		structure.setMessage(mailService.sendMail(token, activation_link));
+		String activation_link = linkGenerationService.getActivationLink(user, request);
+		emailConfiguration.setSubject("Activate Your Account");
+		emailConfiguration.setToAddress(user.getEmail());
+		emailConfiguration.setText("Dear User, Please Activate your Account by clicking on the following Link: "+activation_link);
+		structure.setMessage(mailService.sendMail(emailConfiguration));
 		structure.setData(mapToUserResponse(user));
 		structure.setStatusCode(HttpStatus.CREATED.value());
 		return ResponseEntity.status(HttpStatus.CREATED).body(structure);

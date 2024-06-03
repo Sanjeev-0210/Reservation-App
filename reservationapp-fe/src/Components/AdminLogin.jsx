@@ -16,6 +16,7 @@ const AdminLogin = () => {
             alert("Logging Successfully!!!")
             console.log(res);
             navigate('/adminhomepage')
+            localStorage.setItem("Admin",JSON.stringify(res.data.data))
         })
         .catch((err)=>{
             alert("Logging Failed!!!")

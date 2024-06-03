@@ -1,0 +1,5 @@
+package org.jsp.reservationapi.dto;
+
+public class EmailConfiguration {
+
+}

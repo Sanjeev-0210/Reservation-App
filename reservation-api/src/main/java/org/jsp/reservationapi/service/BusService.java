@@ -37,8 +37,8 @@ public class BusService {
 				.no_of_seats(bus.getNo_of_seats()).admin(bus.getAdmin()).build();
 	}
 
-	public ResponseEntity<ResponseStructure<BusResponse>> saveBus(BusRequest busRequest, int admin_id) {
-		Optional<Admin> recAdmin = adminDao.findById(admin_id);
+	public ResponseEntity<ResponseStructure<BusResponse>> saveBus(BusRequest busRequest, String admin_email) {
+		Optional<Admin> recAdmin = adminDao.findByEmail(admin_email);
 		if (recAdmin.isPresent()) {
 			Admin admin = recAdmin.get();
 			busRequest.setAdmin(admin); // assigning admin to bus

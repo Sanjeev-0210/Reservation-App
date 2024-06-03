@@ -15,9 +15,13 @@ public class AdminDao {
 	public Admin saveAdmin(Admin admin) {
 		return adminRepository.save(admin);
 	}
-
+	
 	public Optional<Admin> findById(int id) {
 		return adminRepository.findById(id);
+	}
+
+	public Optional<Admin> findByEmail(String email) {
+		return adminRepository.findByEmail(email);
 	}
 
 	public Optional<Admin> verify(long phone, String password) {

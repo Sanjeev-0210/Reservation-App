@@ -10,6 +10,7 @@ import org.jsp.reservationapi.model.Bus;
 import org.jsp.reservationapi.service.BusService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -21,13 +22,14 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/bus")
+@CrossOrigin
 public class BusController {
 	@Autowired
 	private BusService busService;
 	
-	@PostMapping("/{admin_id}")
-	public ResponseEntity<ResponseStructure<BusResponse>>  saveBus(@RequestBody BusRequest busRequest,@PathVariable(name="admin_id") int admin_id){
-		return busService.saveBus(busRequest,admin_id);
+	@PostMapping("/{admin_email}")
+	public ResponseEntity<ResponseStructure<BusResponse>>  saveBus(@RequestBody BusRequest busRequest,@PathVariable(name="admin_email") String admin_email){
+		return busService.saveBus(busRequest,admin_email);
 	}
 	
 	@PutMapping("/{id}")

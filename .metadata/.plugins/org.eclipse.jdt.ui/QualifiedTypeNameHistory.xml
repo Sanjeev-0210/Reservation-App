@@ -47,7 +47,6 @@
     <fullyQualifiedTypeName name="org.jsp.reservationapi.dto.BusRequest"/>
     <fullyQualifiedTypeName name="org.jsp.reservationapi.dto.BusResponse"/>
     <fullyQualifiedTypeName name="jakarta.validation.Valid"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.CrossOrigin"/>
     <fullyQualifiedTypeName name="org.jsp.reservationapi.exception.AdminNotFoundException"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
     <fullyQualifiedTypeName name="org.springframework.mail.javamail.JavaMailSender"/>
@@ -60,4 +59,5 @@
     <fullyQualifiedTypeName name="org.springframework.mail.SimpleMailMessage"/>
     <fullyQualifiedTypeName name="net.bytebuddy.utility.RandomString"/>
     <fullyQualifiedTypeName name="jakarta.persistence.Column"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.CrossOrigin"/>
 </qualifiedTypeNameHistroy>
