@@ -1,3 +1,4 @@
+import '../Styles/AdminDashBoard.css'
 const AdminDashBoard = () => {
     return ( 
         <div className="admindashboard">

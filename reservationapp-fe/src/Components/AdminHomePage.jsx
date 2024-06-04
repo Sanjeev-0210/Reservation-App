@@ -9,10 +9,12 @@ const AdminHomePage = () => {
     return ( 
         <div className="adminhomepage">
             <AdminNavbar/>
+            <div className="container">
             <Routes>
                 <Route path='/' element={<AdminDashBoard/>}/>
                 <Route path='/addbus' element={<AddBus/>}/>
             </Routes>
+            </div>
             <AdminFooter/>
         </div>
      );

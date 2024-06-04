@@ -1,0 +1,25 @@
+.adminfooter{
+    background: linear-gradient(rgb(57, 68, 189),rgb(35, 43, 144),rgb(21, 28, 120)) ;
+    color: white;
+    padding: 30px;
+}
+.adminfooter .links{
+    display: grid;
+    grid-template-columns: 280px 280px 280px 280px 280px;
+    padding: 30px;
+    text-align: left;
+}
+#about a,.sub-link a{
+    text-decoration: none;
+    color: white;
+}
+#about span{
+    color: red;
+    font-weight: 200;
+}
+.sub-link li{
+    font-weight: 200;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style-type: none; 
+    margin: 5px 0;
+}
