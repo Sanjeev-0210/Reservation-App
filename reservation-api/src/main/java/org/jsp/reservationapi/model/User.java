@@ -29,7 +29,7 @@ public class User {
 	private int age;
 	@Column(nullable = false)
 	private String gender;
-	@Column(nullable = false,unique = true)
+	@Column(nullable = false)
 	private String password;
 	
 	private String token;

@@ -8,6 +8,7 @@ import AdminSignup from './Components/AdminSignup';
 import UserSignup from './Components/UserSignup';
 import AdminHomePage from './Components/AdminHomePage';
 import ErrorPage from './Components/ErrorPage';
+import UserHomePage from './Components/UserHomePage';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path='/adminsignup' element={<AdminSignup/>}/>
         <Route path='/usersignup' element={<UserSignup/>}/>
         <Route path='/adminhomepage/*' element={<AdminHomePage/>}/>
+        <Route path='/userhomepage/*' element={<UserHomePage/>}/>
        </Routes>
        </BrowserRouter>
     </div>

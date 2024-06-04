@@ -42,8 +42,9 @@ const UserSignup = () => {
                 <input value={phone} onChange={(e)=>{setphone(e.target.value)}} type="tel" placeholder="Enter your phone number" required/>
                 <label>Age: </label>
                 <input value={age} onChange={(e)=>{setage(e.target.value)}} type="number" placeholder="Enter your age" required/>
-                <label value={gender} onChange={(e)=>{setgender(e.target.value)}}>Gender: </label>
-                <span><input type="radio" name="Gender"/><label > Male </label> <input type="radio" name="Gender"/><label > Female</label></span>
+                <label>Gender: </label>
+                <span><input value="Male" onChange={(e)=>{setgender(e.target.value)}} type="radio" name="gender" /><label > Male </label> 
+                <input value="Female" onChange={(e)=>{setgender(e.target.value)}} type="radio" name="gender"/><label > Female</label></span>
                 <label>Password: </label>
                 <input value={password} onChange={(e)=>{setpassword(e.target.value)}} type="password" placeholder="Enter your password" required/>
                 <button>Sign up</button>

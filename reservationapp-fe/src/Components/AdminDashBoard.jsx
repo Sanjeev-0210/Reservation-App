@@ -5,8 +5,9 @@ import BusView from './BusView';
 const AdminDashBoard = () => {
     return ( 
         <div className="admindashboard">
-           <BusView/>
+           {/* <BusView/> */}
            <Routes>
+                <Route path='/' element={<BusView/>}/>
                 <Route path='/busview' element={<BusView/>}/>
            </Routes>
         </div>
