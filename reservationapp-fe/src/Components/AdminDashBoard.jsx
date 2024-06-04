@@ -1,8 +1,14 @@
+
+import { Route, Routes } from 'react-router-dom';
 import '../Styles/AdminDashBoard.css'
+import BusView from './BusView';
 const AdminDashBoard = () => {
     return ( 
         <div className="admindashboard">
-            <h1>AdminDashBoard</h1>
+           <BusView/>
+           <Routes>
+                <Route path='/busview' element={<BusView/>}/>
+           </Routes>
         </div>
      );
 }

@@ -126,5 +126,16 @@ public class BusService {
 		structure.setStatusCode(HttpStatus.OK.value());
 		return ResponseEntity.status(HttpStatus.OK).body(structure);
 	}
+
+	public ResponseEntity<ResponseStructure<List<Bus>>> findAllBus() {
+		ResponseStructure<List<Bus>> structure = new ResponseStructure<>();
+		List<Bus> recBus = busDao.findAllBus();
+		if(recBus.isEmpty())
+			throw new BusNotFoundException("No Bus has been Found!!!");
+		structure.setData(recBus);
+		structure.setMessage("List of buses Found!!!");
+		structure.setStatusCode(HttpStatus.OK.value());
+		return ResponseEntity.status(HttpStatus.OK).body(structure);
+	}
 	
 }

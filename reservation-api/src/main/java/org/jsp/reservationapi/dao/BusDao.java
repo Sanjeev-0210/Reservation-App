@@ -33,4 +33,8 @@ public class BusDao {
 		
 	}
 
+	public List<Bus> findAllBus() {
+		return busRepository.findAll();
+	}
+
 }

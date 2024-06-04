@@ -1,0 +1,30 @@
+.busview{
+    color: white;
+}
+.buslists h2{
+  font-size: 18px;
+}
+.buslists {
+    display: flex;
+    align-items: center;
+   text-align: left; 
+   box-shadow: 0 0 4px rgb(255, 255, 255);
+   margin: 20px 0;
+   padding: 30px;
+   width: 100%;
+   background-color: rgba(255, 255, 255, 0.119);
+}
+.buslists div{
+    margin: 0 30px;
+}
+.buslists .btn{
+    padding: 5px 18px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.buslists .btn:hover{
+    background-color: white;
+    border: 1px solid red;
+    color: black;
+}
+

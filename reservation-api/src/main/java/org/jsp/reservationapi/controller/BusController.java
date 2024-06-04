@@ -37,6 +37,11 @@ public class BusController {
 		return busService.updateBus(busRequest,id);
 	}
 	
+	@GetMapping
+	public ResponseEntity<ResponseStructure<List<Bus>>> findAllBus() {
+		return busService.findAllBus();
+	}
+	
 	@GetMapping("/{id}")
 	public ResponseEntity<ResponseStructure<BusResponse>> findById(@PathVariable int id){
 		return busService.findById(id);

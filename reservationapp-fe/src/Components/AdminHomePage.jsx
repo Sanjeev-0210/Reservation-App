@@ -11,7 +11,7 @@ const AdminHomePage = () => {
             <AdminNavbar/>
             <div className="container">
             <Routes>
-                <Route path='/' element={<AdminDashBoard/>}/>
+                <Route path='/*' element={<AdminDashBoard/>}/>
                 <Route path='/addbus' element={<AddBus/>}/>
             </Routes>
             </div>

@@ -1,7 +1,7 @@
 .adminhomepage{
-    height: 100vh;
+    height: 100%;
     color: black;
     background-image: url("https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVzfGVufDB8fDB8fHww");
     background-repeat: round;
-    background-size: cover;
+    background-size: contain;
 }
