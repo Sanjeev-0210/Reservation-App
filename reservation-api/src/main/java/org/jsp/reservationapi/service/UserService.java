@@ -91,6 +91,9 @@ public class UserService {
 		ResponseStructure<UserResponse> structure = new ResponseStructure<>();
 		Optional<User> dbUser = userDao.verify(email, password);
 		if (dbUser.isPresent()) {
+			User user = dbUser.get();
+			if(user.getStatus().equals(AccountStatus.IN_ACTIVE.toString()))
+				throw new IllegalStateException("Please Activate your account before logging In");
 			structure.setData(mapToUserResponse(dbUser.get()));
 			structure.setMessage("Verification Succesfull");
 			structure.setStatusCode(HttpStatus.OK.value());

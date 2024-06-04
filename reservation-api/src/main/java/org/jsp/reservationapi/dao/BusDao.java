@@ -37,4 +37,8 @@ public class BusDao {
 		return busRepository.findAll();
 	}
 
+	public List<Bus> findBuses(String from_loc, String to_loc, LocalDate date) {
+		return busRepository.findBuses(from_loc, to_loc, date);
+	}
+
 }

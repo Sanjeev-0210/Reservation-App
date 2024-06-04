@@ -104,6 +104,11 @@ public class AdminService {
 		ResponseStructure<AdminResponse> structure = new ResponseStructure<>();
 		Optional<Admin> dbAdmin = adminDao.verify(email, password);
 		if (dbAdmin.isPresent()) {
+			Admin admin = dbAdmin.get();
+			
+			if(admin.getStatus().equals(AccountStatus.IN_ACTIVE.toString()))
+				throw new IllegalStateException("Plaese Activate your Account before Logging In!!!");
+			
 			structure.setData(mapToAdminResponse(dbAdmin.get()));
 			structure.setMessage("Verification Succesfull");
 			structure.setStatusCode(HttpStatus.OK.value());

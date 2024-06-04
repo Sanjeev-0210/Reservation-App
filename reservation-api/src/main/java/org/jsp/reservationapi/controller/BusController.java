@@ -54,6 +54,11 @@ public class BusController {
 
 	@GetMapping("/findByFrom_LoctoTo_Loc")
 	public ResponseEntity<ResponseStructure<List<Bus>>> findByFrom_LoctoTo_Loc(@RequestParam(name="from_loc") String from_loc, @RequestParam(name="to_loc") String to_loc){
-		return busService.findByFrom_LoctoTo_Loc(from_loc,to_loc)
-;	}
+		return busService.findByFrom_LoctoTo_Loc(from_loc,to_loc);	
+	}
+	
+	@GetMapping("/findBuses")
+	public ResponseEntity<ResponseStructure<List<Bus>>> findBuses(@RequestParam(name="from_loc") String from_loc ,@RequestParam(name="to_loc") String to_loc ,@RequestParam(name="date") LocalDate date){
+		return busService.findBuses(from_loc,to_loc,date);
+	}
 }

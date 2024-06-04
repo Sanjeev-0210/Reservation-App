@@ -131,11 +131,23 @@ public class BusService {
 		ResponseStructure<List<Bus>> structure = new ResponseStructure<>();
 		List<Bus> recBus = busDao.findAllBus();
 		if(recBus.isEmpty())
-			throw new BusNotFoundException("No Bus has been Found!!!");
+			throw new BusNotFoundException("No Bus were Found!!!");
 		structure.setData(recBus);
 		structure.setMessage("List of buses Found!!!");
 		structure.setStatusCode(HttpStatus.OK.value());
 		return ResponseEntity.status(HttpStatus.OK).body(structure);
 	}
+
+	public ResponseEntity<ResponseStructure<List<Bus>>> findBuses(String from_loc, String to_loc, LocalDate date) {
+		ResponseStructure<List<Bus>> structure = new ResponseStructure<>();
+		List<Bus> recBus = busDao.findBuses(from_loc,to_loc,date);
+		if(recBus.isEmpty())
+			throw new BusNotFoundException("No Bus were Found!!!");
+		structure.setData(recBus);
+		structure.setMessage("List of Buses Found!!!");
+		structure.setStatusCode(HttpStatus.OK.value());
+		return ResponseEntity.status(HttpStatus.OK).body(structure);
+	}
+
 	
 }
