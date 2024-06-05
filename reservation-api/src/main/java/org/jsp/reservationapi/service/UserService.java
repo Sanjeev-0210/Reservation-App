@@ -94,8 +94,16 @@ public class UserService {
 			User user = dbUser.get();
 			if(user.getStatus().equals(AccountStatus.IN_ACTIVE.toString()))
 				throw new IllegalStateException("Please Activate your account before logging In");
+			
+			String otp = RandomString.make(6);
+			emailConfiguration.setSubject("One Time Verification Code");
+			emailConfiguration.setToAddress(email);
+			emailConfiguration.setText("Dear User, Enter the 6-digit code below to verify your identity: "+otp);
+			structure.setMessage(mailService.sendMail(emailConfiguration));
+			
+			
 			structure.setData(mapToUserResponse(dbUser.get()));
-			structure.setMessage("Verification Succesfull");
+//			structure.setMessage("Verification Succesfull");
 			structure.setStatusCode(HttpStatus.OK.value());
 			return ResponseEntity.status(HttpStatus.OK).body(structure);
 		}

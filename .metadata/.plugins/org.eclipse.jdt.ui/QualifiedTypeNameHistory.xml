@@ -41,8 +41,6 @@
     <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
     <fullyQualifiedTypeName name="org.jsp.reservationapi.dao.AdminDao"/>
     <fullyQualifiedTypeName name="org.jsp.reservationapi.model.Admin"/>
-    <fullyQualifiedTypeName name="jakarta.servlet.http.HttpServletRequest"/>
-    <fullyQualifiedTypeName name="net.bytebuddy.utility.RandomString"/>
     <fullyQualifiedTypeName name="org.jsp.reservationapi.service.LinkGenerationService"/>
     <fullyQualifiedTypeName name="org.jsp.reservationapi.dto.EmailConfiguration"/>
     <fullyQualifiedTypeName name="org.jsp.reservationapi.dao.UserDao"/>
@@ -60,4 +58,6 @@
     <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
     <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
     <fullyQualifiedTypeName name="org.jsp.reservationapi.dto.BusResponse"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.http.HttpServletRequest"/>
+    <fullyQualifiedTypeName name="net.bytebuddy.utility.RandomString"/>
 </qualifiedTypeNameHistroy>

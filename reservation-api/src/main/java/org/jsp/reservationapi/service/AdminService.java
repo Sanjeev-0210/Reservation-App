@@ -109,8 +109,14 @@ public class AdminService {
 			if(admin.getStatus().equals(AccountStatus.IN_ACTIVE.toString()))
 				throw new IllegalStateException("Plaese Activate your Account before Logging In!!!");
 			
+			String otp = RandomString.make(6);
+			emailConfiguration.setSubject("One Time Verification Code");
+			emailConfiguration.setToAddress(email);
+			emailConfiguration.setText("Dear Admin, Enter the 6-digit code below to verify your identity: "+otp);
+			structure.setMessage(mailService.sendMail(emailConfiguration));
+			
 			structure.setData(mapToAdminResponse(dbAdmin.get()));
-			structure.setMessage("Verification Succesfull");
+//			structure.setMessage("Verification Succesfull");
 			structure.setStatusCode(HttpStatus.OK.value());
 			return ResponseEntity.status(HttpStatus.OK).body(structure);
 		}

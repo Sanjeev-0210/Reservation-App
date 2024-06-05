@@ -37,3 +37,16 @@
 .userlogin form p{
     margin-top: 10px;
 }
+#otp{
+    font-size: 13px;
+    display: none;
+    margin-bottom: 10px;
+}
+#otp input{
+    width: 30%;
+}
+#login{
+    display: none;
+    position: relative;
+    left: 30%;
+}

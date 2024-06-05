@@ -20,7 +20,7 @@ const UserSignup = () => {
         e.preventDefault();
         axios.post('http://localhost:8080/api/users',data)
         .then((res)=>{
-            alert("Registered Successfully")
+            alert("Registered Successfully, Verification Link has been sent to registered mailId!!!")
             console.log(res)
             navigate('/userlogin')
         })

@@ -35,4 +35,5 @@ public class LinkGenerationService {
 		String path = request.getServletPath();
 		return siteUrl.replace(path, USER_VERIFY_LINK + user.getToken());
 	}
+
 }

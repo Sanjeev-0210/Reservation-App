@@ -20,7 +20,7 @@ const AdminSignup = () => {
         e.preventDefault();
         axios.post('http://localhost:8080/api/admins',data)
         .then((res)=>{
-            alert("Data Added Successfully")
+            alert("Registered Successfully, Verification Link has been sent to registered mailId!!!")
             console.log(res)
             navigate('/adminlogin')
         })
