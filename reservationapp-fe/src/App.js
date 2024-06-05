@@ -9,6 +9,8 @@ import UserSignup from './Components/UserSignup';
 import AdminHomePage from './Components/AdminHomePage';
 import ErrorPage from './Components/ErrorPage';
 import UserHomePage from './Components/UserHomePage';
+import ForgotPassword from './Components/ForgotPassword';
+import ResetPassword from './Components/ResetPassword';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         <Route path='/userlogin' element={<UserLogin/>}/>
         <Route path='/adminsignup' element={<AdminSignup/>}/>
         <Route path='/usersignup' element={<UserSignup/>}/>
+        <Route path='/forgot-password' element={<ForgotPassword/>}/>
+        <Route path='/reset-password' element={<ResetPassword/>}/>
         <Route path='/adminhomepage/*' element={<AdminHomePage/>}/>
         <Route path='/userhomepage/*' element={<UserHomePage/>}/>
        </Routes>

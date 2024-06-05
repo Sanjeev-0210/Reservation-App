@@ -144,6 +144,29 @@ public class UserService {
 				.gender(user.getGender()).password(user.getPassword()).build();
 	}
 
+	public String forgotPassword(String email, HttpServletRequest request) {
+		Optional<User> recUser = userDao.findByEmail(email);
+		if(recUser.isEmpty())
+			throw new UserNotFoundException("Invalid Email Id");
+		User dbUser = recUser.get();
+		String resetPasswordLink = linkGenerationService.getResetPasswordLink(dbUser, request);
+		emailConfiguration.setSubject("RESET YOUR PASSWORD");
+		emailConfiguration.setToAddress(email);
+		emailConfiguration.setText("Please click on the following link to reset your password: "+resetPasswordLink);
+		mailService.sendMail(emailConfiguration);
+		return "Reset Password link has been sent to entered Mail Id!!!";
+	}
+
+	public UserResponse verifyLink(String token) {
+		Optional<User> recUser = userDao.findByToken(token);
+		if(recUser.isEmpty())
+			throw new UserNotFoundException("Link has been Expired or Invalid!!!");
+		User dbUser = recUser.get();
+		dbUser.setToken(null);
+		userDao.saveUser(dbUser);
+		return mapToUserResponse(dbUser);
+	}
+
 	
 
 }

@@ -1,5 +1,7 @@
 package org.jsp.reservationapi.controller;
 
+import java.io.IOException;
+
 import org.jsp.reservationapi.dto.ResponseStructure;
 import org.jsp.reservationapi.dto.UserRequest;
 import org.jsp.reservationapi.dto.UserResponse;
@@ -18,6 +20,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import jakarta.validation.Valid;
 
 @CrossOrigin
@@ -62,6 +65,24 @@ public class UserController {
 	@GetMapping("/activate")
 	public String activate(@RequestParam String token) {
 		return userService.activate(token);
+	}
+	
+	@PostMapping("/forgot-password")
+	public String forgotPassword(@RequestParam String email,HttpServletRequest request) {
+		return userService.forgotPassword(email, request);
+	}
+	
+	@GetMapping("/verify-link")
+	public void verifyLink(@RequestParam String token, HttpServletResponse response) {
+		UserResponse userResponse =  userService.verifyLink(token);
+		if(userResponse != null) {
+			try {
+				response.sendRedirect("http://localhost:3000/reset-password");
+			}
+			catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
 	}
 
 }
