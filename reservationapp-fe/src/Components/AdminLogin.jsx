@@ -53,8 +53,7 @@ const AdminLogin = () => {
                 <div id="link">
                     <p>Are you new to page? <Link to='/adminsignup'> Register here</Link></p>
                     <p ><Link style={{color:"white"}} to='/forgot-password'>forgot password?</Link></p>
-                </div>
-                
+                </div>               
             </form>
         </div>
     );

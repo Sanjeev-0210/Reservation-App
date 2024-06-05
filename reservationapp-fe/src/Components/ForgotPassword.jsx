@@ -1,5 +1,8 @@
 import axios from "axios";
 import { useState } from "react";
+import '../Styles/ForgotPassword.css'
+import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
+import { Link } from "react-router-dom";
 
 const ForgotPassword = () => {
 
@@ -15,8 +18,9 @@ const ForgotPassword = () => {
     return ( 
         <div className="forgotpassword">
             <form onSubmit={resetpassword}>
-                <label>Email</label>
-                <input value={email} onChange={(e)=>setemail(e.target.value)} type="email" required/>
+            <p><Link to='/adminlogin'><ArrowCircleLeftIcon id='backicon'/></Link> Back</p>
+                <h4>Enter your Email ID </h4> 
+                <input value={email} onChange={(e)=>setemail(e.target.value)} type="email" required/> <br /><br />
                 <button className="btn btn-danger">Reset Password</button>
             </form>
         </div>
