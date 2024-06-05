@@ -149,5 +149,18 @@ public class BusService {
 		return ResponseEntity.status(HttpStatus.OK).body(structure);
 	}
 
+	public ResponseEntity<ResponseStructure<String>> delete(int id) {
+		ResponseStructure<String> structure = new ResponseStructure<>();
+		Optional<Bus> recBus = busDao.findById(id);
+		if(recBus.isPresent()) {
+			busDao.delete(id);
+			structure.setData("Bus Found");
+			structure.setMessage("Bus deleted");
+			structure.setStatusCode(HttpStatus.OK.value());
+			return ResponseEntity.status(HttpStatus.OK).body(structure);
+		}
+		throw new BusNotFoundException("Bus Not Found, Invalid Bus ID!!!");
+	}
+
 	
 }

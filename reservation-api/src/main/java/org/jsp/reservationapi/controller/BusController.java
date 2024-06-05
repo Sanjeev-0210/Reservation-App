@@ -11,6 +11,7 @@ import org.jsp.reservationapi.service.BusService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -60,5 +61,10 @@ public class BusController {
 	@GetMapping("/findBuses")
 	public ResponseEntity<ResponseStructure<List<Bus>>> findBuses(@RequestParam(name="from_loc") String from_loc ,@RequestParam(name="to_loc") String to_loc ,@RequestParam(name="date") LocalDate date){
 		return busService.findBuses(from_loc,to_loc,date);
+	}
+	
+	@DeleteMapping("/{id}")
+	public ResponseEntity<ResponseStructure<String>> delete(@PathVariable int id){
+		return busService.delete(id);
 	}
 }

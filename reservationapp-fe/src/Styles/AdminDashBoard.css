@@ -3,3 +3,10 @@
     background-repeat: no-repeat;
     background-size: cover;
 } */
+.admindashboard{
+    display: flex;
+    justify-content: space-between;
+}
+.filter{
+    display: none;
+}

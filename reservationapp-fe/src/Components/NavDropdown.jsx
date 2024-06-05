@@ -16,7 +16,7 @@ function NavDropdown() {
   return (
     <DropdownButton id="dropdown-basic-button" title="Account">
       <Dropdown.Item><Link className='item' to='/adminhomepage/addbus'>Add Bus</Link></Dropdown.Item>
-      <Dropdown.Item ><Link className='item' to='/adminhomepage/busview'>Bus Lists</Link></Dropdown.Item>
+      <Dropdown.Item ><Link className='item' to='/adminhomepage/adminviewbus'>Bus Lists</Link></Dropdown.Item>
       <Dropdown.Item href="#/action-3" className='item'>Edit Profile</Dropdown.Item>
       <Dropdown.Item><Link className='item' onClick={logout}>Log out</Link></Dropdown.Item>
     </DropdownButton>

@@ -41,4 +41,8 @@ public class BusDao {
 		return busRepository.findBuses(from_loc, to_loc, date);
 	}
 
+	public void delete(int id) {
+		 busRepository.deleteById(id);
+	}
+
 }
