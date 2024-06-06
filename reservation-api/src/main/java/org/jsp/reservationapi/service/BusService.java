@@ -34,7 +34,7 @@ public class BusService {
 	private BusResponse mapToBusResponse(Bus bus) {
 		return BusResponse.builder().id(bus.getId()).name(bus.getName()).departure_date(bus.getDeparture_date())
 				.bus_no(bus.getBus_no()).from_loc(bus.getFrom_loc()).to_loc(bus.getTo_loc())
-				.no_of_seats(bus.getNo_of_seats()).admin(bus.getAdmin()).build();
+				.no_of_seats(bus.getNo_of_seats()).build();
 	}
 
 	public ResponseEntity<ResponseStructure<BusResponse>> saveBus(BusRequest busRequest, int admin_id) {

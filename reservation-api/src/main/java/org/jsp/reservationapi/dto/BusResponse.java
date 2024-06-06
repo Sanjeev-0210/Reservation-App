@@ -21,5 +21,5 @@ public class BusResponse {
 	private String bus_no;
 	private String from_loc,to_loc;
 	private int no_of_seats;
-	private Admin admin;
+//	private Admin admin;
 }

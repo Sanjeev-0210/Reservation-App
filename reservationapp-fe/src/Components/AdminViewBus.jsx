@@ -3,8 +3,12 @@ import { useEffect, useState } from "react";
 import '../Styles/BusView.css'
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
 import EditNoteIcon from '@mui/icons-material/EditNote';
+import { useNavigate } from "react-router-dom";
+
 
 const AdminViewBus = () => {
+
+    let navigate = useNavigate("");
 
     let [bus, setbus] = useState([])
     let [force,setforce] = useState(true)
@@ -33,6 +37,10 @@ const AdminViewBus = () => {
             })
     }
 
+    function editBus(id){
+        navigate(`/adminhomepage/editbus/${id}`)
+    }
+
     return (
         <div className="busview">
             {bus.map((item) => {
@@ -54,7 +62,7 @@ const AdminViewBus = () => {
                         <div><button className="btn btn-danger">Book Seats</button>
 
                         </div>
-                        <p onClick={() => removeBus(item.id, item.bus_no) } style={{ color: 'white', cursor: 'pointer' }}><EditNoteIcon /></p>
+                        <p onClick={() => editBus(item.id)} style={{ color: 'white', cursor: 'pointer' }}><EditNoteIcon /></p>
                         <p onClick={() => removeBus(item.id, item.bus_no) } style={{ color: 'white', cursor: 'pointer' }}><DeleteForeverIcon /></p>
                     </div>
                 )

@@ -4,6 +4,7 @@ import AdminNavbar from './AdminNavbar';
 import AdminDashBoard from './AdminDashBoard';
 import AdminFooter from './AdminFooter';
 import AddBus from './AddBus';
+import EditBus from './EditBus';
 
 const AdminHomePage = () => {
     return ( 
@@ -13,6 +14,7 @@ const AdminHomePage = () => {
             <Routes>
                 <Route path='/*' element={<AdminDashBoard/>}/>
                 <Route path='/addbus' element={<AddBus/>}/>
+                <Route path='/editbus/:id' element={<EditBus/>}/>
             </Routes>
             </div>
             <AdminFooter/>

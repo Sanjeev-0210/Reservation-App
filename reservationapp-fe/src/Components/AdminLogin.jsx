@@ -36,7 +36,8 @@ const AdminLogin = () => {
         if(otp==="123456"){
             alert("Logging Successfully!!!")
         navigate('/adminhomepage')
-       
+        }else{
+            alert("Invalid OTP!!!")
         }
     }
 

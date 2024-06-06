@@ -48,7 +48,10 @@ const UserLogin = () => {
                 <div id="otp"><label>Enter the valid OTP:</label><input type="text" value={otp} onChange={(e)=>{setotp(e.target.value)}} /></div>
                 <button id="btnotp" className='btn btn-primary'>Get OTP</button>
                 <button id="login" className='btn btn-primary' onClick={login}>Login</button>
+                <div id="link">
                 <p>Didn't have an account? <Link to='/usersignup'> Sign up</Link></p> 
+                <p ><Link style={{color:"white"}} to='/forgot-password'>forgot password?</Link></p>
+                </div>
             </form>
         </div>
      );
