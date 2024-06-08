@@ -29,12 +29,13 @@ const BusView = () => {
                             <p><i>{item.no_of_seats}</i></p></div>
                         <div><h2>Departure date</h2>
                             <p>{item.departure_date}</p></div>
+                            <div><h2>Bus Number</h2>
+                            <p>{item.bus_no}</p></div>
                         <div><h2>From Location</h2>
                             <p>{item.from_loc}</p></div>
                         <div><h2>To Location</h2>
                             <p>{item.to_loc}</p></div>
-                        <div><h2>Bus Number</h2>
-                            <p>{item.bus_no}</p></div>
+                        
                         <div><button className="btn btn-danger">Book Seats</button></div>
 
                     </div>

@@ -116,7 +116,7 @@ public class AdminService {
 			structure.setMessage(mailService.sendMail(emailConfiguration));
 			
 			structure.setData(mapToAdminResponse(dbAdmin.get()));
-//			structure.setMessage("Verification Succesfull");
+			structure.setMessage("Verification Succesfull");
 			structure.setStatusCode(HttpStatus.OK.value());
 			return ResponseEntity.status(HttpStatus.OK).body(structure);
 		}

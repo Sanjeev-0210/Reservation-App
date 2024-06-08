@@ -47,3 +47,35 @@
    border: 1px solid blue;
    color: black;
 }  
+
+@media (max-width:800px) {
+   .addbus{
+      box-shadow: 0 0 10px black;
+      width: max-content;
+      padding: 20px;
+      border-radius: 10px;
+      position: relative;
+      left: 40px;
+      margin: 20px;
+     background-color: white;
+     font-size: 12px;
+   }
+   .addbus form{
+      display: grid;
+     grid-template-columns: 90px 130px; 
+     text-align: left;
+     align-items: center;
+  
+  }
+  .addbus button {
+   position: relative;
+   left: 60px;
+   top: 0;
+   padding: 7px 15px;
+   background-color: blue;
+   border: 1px solid blue;
+   border-radius: 5px;
+   color: white;
+   /* margin-top: 20px; */
+ }
+}

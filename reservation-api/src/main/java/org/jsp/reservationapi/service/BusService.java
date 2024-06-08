@@ -43,6 +43,7 @@ public class BusService {
 			Admin admin = recAdmin.get();
 			Bus bus = mapToBus(busRequest);//map busrequest to bus
 			bus.setAdmin(admin); // assigning admin to bus
+			bus.setAvailable_seats(bus.getAvailable_seats());
 			admin.getBuses().add(bus);// Assigning bus to admin
 		ResponseStructure<BusResponse> structure = new ResponseStructure<>();
 		structure.setMessage("Bus Saved");
@@ -84,6 +85,8 @@ public class BusService {
 			dbBus.setName(busRequest.getName());
 			dbBus.setNo_of_seats(busRequest.getNo_of_seats());
 			dbBus.setTo_loc(busRequest.getTo_loc());
+			dbBus.setCost_per_seat(busRequest.getCost_per_seat());
+			dbBus.setAvailable_seats(busRequest.getNo_of_seats());
 			structure.setMessage("Bus has been Updated!!!");
 			structure.setData(mapToBusResponse(busDao.saveBus(dbBus)));
 			structure.setStatusCode(HttpStatus.ACCEPTED.value());
@@ -160,6 +163,17 @@ public class BusService {
 			return ResponseEntity.status(HttpStatus.OK).body(structure);
 		}
 		throw new BusNotFoundException("Bus Not Found, Invalid Bus ID!!!");
+	}
+
+	public ResponseEntity<ResponseStructure<List<Bus>>> findByAdminId(int admin_id) {
+		ResponseStructure<List<Bus>> structure = new ResponseStructure<>();
+		List<Bus> buses = busDao.findBusesByAdminId(admin_id);
+		if (buses.isEmpty())
+			throw new BusNotFoundException("No Buses for entered Admin Id");
+		structure.setData(buses);
+		structure.setMessage("List of Buses for entered Amdin id");
+		structure.setStatusCode(HttpStatus.OK.value());
+		return ResponseEntity.status(HttpStatus.OK).body(structure);
 	}
 
 	

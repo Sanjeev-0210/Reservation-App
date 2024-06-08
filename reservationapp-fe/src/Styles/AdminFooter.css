@@ -23,3 +23,26 @@
     list-style-type: none; 
     margin: 5px 0;
 }
+
+
+@media (min-width:1200px) {
+    .adminfooter .links{
+        display: grid;
+        grid-template-columns: 250px 250px 250px 250px 250px;
+        padding: 30px;
+        text-align: left;
+    }
+}
+
+@media (max-width:600px) {
+    .adminfooter .links{
+        display: grid;
+        grid-template-columns: 300px;
+        padding: 30px;
+        text-align: left;
+    }
+    .sub-link{
+        position: relative;
+        right: 30px;
+    }
+}

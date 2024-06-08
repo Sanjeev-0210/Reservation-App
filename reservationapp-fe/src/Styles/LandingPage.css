@@ -35,3 +35,25 @@
     color: rgb(255, 0, 0);
     text-shadow: 0 0 10px rgb(255, 255, 255);
 }
+
+@media (max-width:800px) {
+    .landingpage{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 1px solid rgb(162, 159, 159);
+        border-radius: 20px;
+        width: 60%;
+        padding: 45px 25px;
+        position: relative;
+        top: 25vh;
+        left: 20%;
+        box-shadow: 0 0 10px rgb(255, 255, 255);
+    }
+    .landingpage img{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        margin-top: 40px;
+    }
+}

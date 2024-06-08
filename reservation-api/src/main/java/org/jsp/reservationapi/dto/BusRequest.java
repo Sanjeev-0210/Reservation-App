@@ -16,5 +16,6 @@ public class BusRequest {
 	private String from_loc,to_loc;
 	private int no_of_seats;
 	private Admin admin;
+	private double cost_per_seat;
 
 }

@@ -49,3 +49,14 @@
     border: 1px solid blue;
     color: black;
 }  
+
+@media (max-width:800px) {
+    .usersignup form{
+        grid-template-columns: 110px 190px; 
+        text-align: left;
+        align-items: center;
+        position: absolute;
+        top: 220px;
+        left: 15%;
+   }
+}

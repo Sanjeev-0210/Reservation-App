@@ -63,6 +63,11 @@ public class BusController {
 		return busService.findBuses(from_loc,to_loc,date);
 	}
 	
+	@GetMapping("/findByAdminId/{admin_id}")
+	public ResponseEntity<ResponseStructure<List<Bus>>> findByAdminId(@PathVariable int admin_id) {
+		return busService.findByAdminId(admin_id);
+	}
+	
 	@DeleteMapping("/{id}")
 	public ResponseEntity<ResponseStructure<String>> delete(@PathVariable int id){
 		return busService.delete(id);
