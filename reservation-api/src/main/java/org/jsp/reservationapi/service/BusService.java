@@ -28,13 +28,13 @@ public class BusService {
 	private Bus mapToBus(BusRequest busRequest) {
 		return Bus.builder().id(busRequest.getId()).name(busRequest.getName()).departure_date(busRequest.getDeparture_date())
 				.bus_no(busRequest.getBus_no()).from_loc(busRequest.getFrom_loc()).to_loc(busRequest.getTo_loc())
-				.no_of_seats(busRequest.getNo_of_seats()).admin(busRequest.getAdmin()).build();
+				.no_of_seats(busRequest.getNo_of_seats()).available_seats(busRequest.getAvailable_seats()).cost_per_seat(busRequest.getCost_per_seat()).admin(busRequest.getAdmin()).build();
 	}
 	
 	private BusResponse mapToBusResponse(Bus bus) {
 		return BusResponse.builder().id(bus.getId()).name(bus.getName()).departure_date(bus.getDeparture_date())
 				.bus_no(bus.getBus_no()).from_loc(bus.getFrom_loc()).to_loc(bus.getTo_loc())
-				.no_of_seats(bus.getNo_of_seats()).build();
+				.no_of_seats(bus.getNo_of_seats()).available_seats(bus.getAvailable_seats()).cost_per_seats(bus.getCost_per_seat()).build();
 	}
 
 	public ResponseEntity<ResponseStructure<BusResponse>> saveBus(BusRequest busRequest, int admin_id) {

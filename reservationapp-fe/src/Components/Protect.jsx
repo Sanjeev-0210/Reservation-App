@@ -1,6 +1,6 @@
 import { Navigate } from "react-router-dom";
 import React from "react";
-const Protect = (Child) => {
+const Protect = ({Child}) => {
 
     let x = localStorage.getItem("Admin")
 

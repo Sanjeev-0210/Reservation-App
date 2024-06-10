@@ -10,6 +10,7 @@ function NavDropdown() {
   function logout(e){
     e.preventDefault();
     alert("You have been Logged Out Successfully!!!")
+    localStorage.setItem("Admin",null)
     navigate('/adminlogin')
   }
 

@@ -1,8 +1,9 @@
 
 import { Route, Routes } from 'react-router-dom';
 import '../Styles/AdminDashBoard.css'
-import BusView from './BusView';
 import AdminViewBus from './AdminViewBus';
+import SearchBus from './SearchBus';
+// import BusView from './BusView';
 const AdminDashBoard = () => {
     return ( 
         <div className="admindashboard">
@@ -13,7 +14,8 @@ const AdminDashBoard = () => {
             </div>
             <div className='view'>
             <Routes>
-            <Route path='/' element={<BusView/>}/>
+            <Route path='/' element={<SearchBus/>}/>
+            {/* <Route path='/' element={<BusView/>}/> */}
                 <Route path='/adminviewbus' element={<AdminViewBus/>}/>
                 </Routes>
             </div>

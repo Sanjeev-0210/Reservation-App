@@ -10,8 +10,10 @@ const AddBus = () => {
    let[from_loc,setfrom_loc]=useState("");
    let[to_loc,setto_loc]=useState("");
    let[no_of_seats,setno_of_seats]=useState("");
+   let[available_seats,setavailable_seats]=useState("");
+   let[cost_per_seat,setcost_per_seat]=useState("");
 
-    let busdata = {name,bus_no,departure_date,from_loc,to_loc,no_of_seats}
+    let busdata = {name,bus_no,departure_date,from_loc,to_loc,no_of_seats,available_seats,cost_per_seat}
 
     let admin = JSON.parse(localStorage.getItem("Admin"))
     console.log(admin);
@@ -47,6 +49,10 @@ const AddBus = () => {
             <input value={to_loc} onChange={(e)=>{setto_loc(e.target.value)}} type="text" required/>
             <label >Number of Seats</label>
             <input value={no_of_seats} onChange={(e)=>{setno_of_seats(e.target.value)}} type="number" required/>
+            <label> Available Seats</label>
+            <input value={available_seats} onChange={(e)=>{setavailable_seats(e.target.value)}} type="number" required/>
+            <label> Cost per Seat</label>
+            <input value={cost_per_seat} onChange={(e)=>{setcost_per_seat(e.target.value)}} type="number" required/>
             <button className="btn">Add</button>
         </form>
         </div>

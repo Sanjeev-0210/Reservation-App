@@ -26,8 +26,8 @@ function App() {
         <Route path='/usersignup' element={<UserSignup/>}/>
         <Route path='/forgot-password' element={<ForgotPassword/>}/>
         <Route path='/reset-password' element={<ResetPassword/>}/>
-        {/* <Route path='/adminhomepage/*' element={<Protect Child={AdminHomePage}/>}/> */}
-        <Route path='/adminhomepage/*' element={<AdminHomePage/>}/>
+        <Route path='/adminhomepage/*' element={<Protect Child={AdminHomePage}/>}/>
+        {/* <Route path='/adminhomepage/*' element={<AdminHomePage/>}/> */}
         <Route path='/userhomepage/*' element={<UserHomePage/>}/>
        </Routes>
        </BrowserRouter>
