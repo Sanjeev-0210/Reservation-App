@@ -1,6 +1,7 @@
 import SearchIcon from '@mui/icons-material/Search';
 import axios from 'axios';
 import { useState } from 'react';
+import '../Styles/SearchBus.css'
 
 const SearchBus = () => {
 
@@ -9,19 +10,31 @@ const SearchBus = () => {
     let [departure_date, setdeparture_date] = useState("")
 
     let [data,setdata] = useState([])
+    let [NFBus,setNFBus] = useState("")
+    let [loading, setLoading] = useState(false);
 
     function searchbuses(e) {
         e.preventDefault()
+        setLoading(true)
         axios.get(`http://localhost:8080/api/bus/findBuses?from_loc=${from_loc}&to_loc=${to_loc}&date=${departure_date}`)
-            .then((res) => {
-                console.log(res.data);
-                setdata(res.data.data)
-                alert("Buses Found")
-
-            })
-            .catch((err) => {
-                console.log(err);
-                alert("Bus Not Found")
+        .then((res) => {
+            if(res.data.data){
+             console.log(res.data);
+             setdata(res.data.data)
+             setNFBus("");
+            }
+            else {
+             setdata([]);
+             setNFBus("Huh-ohh! No Bus Found on specified Date");
+         }
+         })
+         .catch((err) => {
+             console.log(err);
+             setdata([]);
+             setNFBus("Huh-ohh! No Bus Found on specified Date")
+         })
+            .finally(()=>{
+                setLoading(false)
             })
     }
 
@@ -29,16 +42,21 @@ const SearchBus = () => {
 
     return (
         <div className="searchbus">
+            <h1>India's No. 1 Online Bus Ticket Booking Site</h1>
             <div className="search-input">
                 <form onSubmit={searchbuses}>
-                    <input value={from_loc} onChange={(e) => { setfrom_loc(e.target.value) }} type="text" placeholder="From Location" />
-                    <input value={to_loc} onChange={(e) => { setto_loc(e.target.value) }} type="text" placeholder="To Location" />
-                    <input value={departure_date} onChange={(e) => { setdeparture_date(e.target.value) }} type="date" />
+                    <input value={from_loc} onChange={(e) => { setfrom_loc(e.target.value) }} type="text" placeholder="From Location" required/>
+                    <input value={to_loc} onChange={(e) => { setto_loc(e.target.value) }} type="text" placeholder="To Location" required/>
+                    <input value={departure_date} onChange={(e) => { setdeparture_date(e.target.value) }} type="date" required/>
                     <button>Search <SearchIcon /></button>
                 </form>
             </div>
+            <div className="sort">
+                    <h5>SortBy:</h5>
+            </div>
             <div className='lists'>
-            {data.map((item) => {
+                {loading?<p>Loading...</p>:
+                  data.length > 0 ? data.map((item) => {
                 return (
                     <div className="buslists">
                         <div>
@@ -55,11 +73,12 @@ const SearchBus = () => {
                         <div><h2>To Location</h2>
                             <p>{item.to_loc}</p></div>
                         
-                        <div><button className="btn btn-danger">Book Seats</button></div>
+                        <div><button className="btn btn-primary">Book Seats</button></div>
 
                     </div>
                 )
-            })}
+            }):<h1>{NFBus}</h1>}
+            
             </div>
         </div>
     );

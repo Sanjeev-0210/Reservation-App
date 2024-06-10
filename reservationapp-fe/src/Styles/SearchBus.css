@@ -1,0 +1,49 @@
+.searchbus {
+    margin: 50px;
+    color: white;
+}
+
+.search-input form {
+    display: grid;
+    grid-template-columns: 300px 300px 300px 150px;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 50px;
+    margin: 50px;
+}
+
+.search-input input {
+    padding: 26px;
+    font-size: 22px;
+    background-color: transparent;
+    color: white;
+    border: 1px double white;
+    outline: none;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+.search-input input::placeholder {
+    color: white;
+}
+
+.search-input button,.lists .buslists button  {
+    position: relative;
+    top: 0px;
+    font-size: 18px;
+    padding: 7px 15px;
+    background-color: blue;
+    border: 1px solid blue;
+    border-radius: 5px;
+    color: white;
+    /* margin-top: 20px; */
+}
+
+.search-input button:hover,.lists .buslists button:hover {
+    background-color: white;
+    border: 1px solid blue;
+    color: black;
+}
+.sort{
+    text-align: left;
+}

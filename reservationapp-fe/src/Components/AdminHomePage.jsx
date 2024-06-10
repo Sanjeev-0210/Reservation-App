@@ -9,12 +9,15 @@ import EditBus from './EditBus';
 const AdminHomePage = () => {
     return ( 
         <div className="adminhomepage">
+            
             <AdminNavbar/>
             <div className="container">
+            {/* <div class="overlay"></div> */}
             <Routes>
                 <Route path='/*' element={<AdminDashBoard/>}/>
                 <Route path='/addbus' element={<AddBus/>}/>
                 <Route path='/editbus/:id' element={<EditBus/>}/>
+                
             </Routes>
             </div>
             <AdminFooter/>
