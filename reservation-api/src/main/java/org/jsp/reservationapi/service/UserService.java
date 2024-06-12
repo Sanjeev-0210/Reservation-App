@@ -1,6 +1,7 @@
 package org.jsp.reservationapi.service;
 
 import java.util.Optional;
+import java.util.Random;
 
 import org.jsp.reservationapi.dao.UserDao;
 import org.jsp.reservationapi.dto.EmailConfiguration;
@@ -10,6 +11,7 @@ import org.jsp.reservationapi.dto.UserResponse;
 import org.jsp.reservationapi.exception.UserNotFoundException;
 import org.jsp.reservationapi.model.User;
 import org.jsp.reservationapi.util.AccountStatus;
+import org.jsp.reservationapi.util.VerifyOtp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -28,6 +30,8 @@ public class UserService {
 	private EmailConfiguration emailConfiguration;
 	@Autowired
 	private LinkGenerationService linkGenerationService;
+	@Autowired
+	private VerifyOtp verifyOtp;
 
 	public ResponseEntity<ResponseStructure<UserResponse>> save(UserRequest userRequest,HttpServletRequest request) {
 		ResponseStructure<UserResponse> structure = new ResponseStructure<>();
@@ -95,12 +99,14 @@ public class UserService {
 			if(user.getStatus().equals(AccountStatus.IN_ACTIVE.toString()))
 				throw new IllegalStateException("Please Activate your account before logging In");
 			
-			String otp = RandomString.make(6);
+			Random random = new Random();
+			int otp = 100000 + random.nextInt(900000);
 			emailConfiguration.setSubject("One Time Verification Code");
 			emailConfiguration.setToAddress(email);
 			emailConfiguration.setText("Dear User, Enter the 6-digit code below to verify your identity: "+otp);
 			structure.setMessage(mailService.sendMail(emailConfiguration));
 			
+			verifyOtp.setGenerated_otp(otp);
 			
 			structure.setData(mapToUserResponse(dbUser.get()));
 //			structure.setMessage("Verification Succesfull");

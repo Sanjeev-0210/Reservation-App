@@ -10,13 +10,11 @@ public class VerifyOtp {
 	
 	private int generated_otp;
 	
-	public String verifyotp(int otp) {
-		String value;
+	public boolean verifyotp(int otp) {
 		if(otp==generated_otp) {
-			value = "verified";
-			return value;
+			return true;
 		}
-		return null;
+		return false;
 		
 	}
 

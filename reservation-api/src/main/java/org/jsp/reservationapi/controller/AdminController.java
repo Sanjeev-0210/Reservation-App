@@ -89,7 +89,7 @@ public class AdminController {
 	}
 	
 	@GetMapping("/verify-otp/{otp}")
-	public String verifyOTP(@PathVariable(name="otp") int otp) {
+	public boolean verifyOTP(@PathVariable(name="otp") int otp) {
 		return verifyOtp.verifyotp(otp);
 	}
 	

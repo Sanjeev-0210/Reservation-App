@@ -11,7 +11,7 @@ const AdminLogin = () => {
 
     let navigate = useNavigate("");
 
-    let [ verify,setverify] = useState(false)
+    let [ verify,setverify] = useState(null)
 
     let showotp = document.getElementById("otp")
     let btnotp = document.getElementById("btnotp")

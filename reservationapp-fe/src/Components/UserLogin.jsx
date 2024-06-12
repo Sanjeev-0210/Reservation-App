@@ -3,12 +3,15 @@ import '../Styles/UserLogin.css'
 import { useState } from "react";
 import axios from "axios";
 
+
 const UserLogin = () => {
     let [email,setemail] = useState("");
     let [password,setpassword] = useState("");
     let[otp,setotp] = useState("");
+    let [verify,setverify] = useState(null)
 
     let navigate = useNavigate("");
+
 
     let showotp = document.getElementById("otp")
     let btnotp = document.getElementById("btnotp")
@@ -32,10 +35,20 @@ const UserLogin = () => {
     }
     function login(e){
         e.preventDefault();
-        if(otp==="123456"){
+        axios.get(`http://localhost:8080/api/users/verify-otp/${otp}`)
+        .then((res)=>{
+            setverify(res.data.data)
+            console.log(res.data.data);
+        })
+        .catch((err)=>{
+            console.log(err);
+        })
+        if(verify!==null){
             alert("Login Successfully!!!");
             navigate('/userhomepage');
-       
+        }
+        else{
+            alert("Invalid OTP!!!")
         }
     }
 

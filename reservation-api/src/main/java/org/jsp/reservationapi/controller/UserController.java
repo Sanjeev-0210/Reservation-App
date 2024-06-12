@@ -6,6 +6,7 @@ import org.jsp.reservationapi.dto.ResponseStructure;
 import org.jsp.reservationapi.dto.UserRequest;
 import org.jsp.reservationapi.dto.UserResponse;
 import org.jsp.reservationapi.service.UserService;
+import org.jsp.reservationapi.util.VerifyOtp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -29,6 +30,8 @@ import jakarta.validation.Valid;
 public class UserController {
 	@Autowired
 	private UserService userService;
+	@Autowired
+	private VerifyOtp verifyOtp;
 	
 	@PostMapping
 	public ResponseEntity<ResponseStructure<UserResponse>>  saveUser(@Valid @RequestBody UserRequest userRequest, HttpServletRequest request) {
@@ -83,6 +86,11 @@ public class UserController {
 				e.printStackTrace();
 			}
 		}
+	}
+	
+	@GetMapping("/verify-otp/{otp}")
+	public boolean verifyOTP(@PathVariable(name="otp") int otp) {
+		return verifyOtp.verifyotp(otp);
 	}
 
 }
