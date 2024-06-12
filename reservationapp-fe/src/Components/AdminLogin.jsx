@@ -11,6 +11,8 @@ const AdminLogin = () => {
 
     let navigate = useNavigate("");
 
+    let [ verify,setverify] = useState(false)
+
     let showotp = document.getElementById("otp")
     let btnotp = document.getElementById("btnotp")
     let showlogin = document.getElementById("login")
@@ -23,7 +25,7 @@ const AdminLogin = () => {
             alert("OTP sent Successfully!!!")
             btnotp.style.display="none"
             showlogin.style.display="flex"
-            console.log(res.data);
+            // console.log(res.data);
             localStorage.setItem("Admin",JSON.stringify(res.data.data))
         })
         .catch((err)=>{
@@ -31,9 +33,21 @@ const AdminLogin = () => {
             // alert(err.message)
         })
     }
+
+    
+
+
     function login(e){
         e.preventDefault();
-        if(otp==="123456"){
+        axios.get(`http://localhost:8080/api/admins/verify-otp/${otp}`)
+        .then((res)=>{
+            setverify(res.data.data)
+            console.log(res.data.data);
+        })
+        .catch((err)=>{
+            console.log(err);
+        })
+        if(verify!==null){
             alert("Logging Successfully!!!")
         navigate('/adminhomepage')
         }else{

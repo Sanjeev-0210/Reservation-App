@@ -7,6 +7,7 @@ import org.jsp.reservationapi.dto.AdminRequest;
 import org.jsp.reservationapi.dto.AdminResponse;
 import org.jsp.reservationapi.dto.ResponseStructure;
 import org.jsp.reservationapi.service.AdminService;
+import org.jsp.reservationapi.util.VerifyOtp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -31,6 +32,8 @@ public class AdminController {
 
 	@Autowired
 	private AdminService adminService;
+	@Autowired
+	private VerifyOtp verifyOtp;
 
 	@PostMapping
 	public ResponseEntity<ResponseStructure<AdminResponse>> saveAdmin(@Valid @RequestBody AdminRequest adminRequest,HttpServletRequest request) {
@@ -83,6 +86,11 @@ public class AdminController {
 				e.printStackTrace();
 			}
 		}
+	}
+	
+	@GetMapping("/verify-otp/{otp}")
+	public String verifyOTP(@PathVariable(name="otp") int otp) {
+		return verifyOtp.verifyotp(otp);
 	}
 	
 }

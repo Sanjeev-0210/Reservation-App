@@ -1,0 +1,19 @@
+package org.jsp.reservationapi.util;
+
+import org.springframework.stereotype.Component;
+
+import lombok.Data;
+
+@Component
+@Data
+public class VerifyOtp {
+	
+	private int generated_otp;
+	
+	public void verifyotp(int otp) {
+		if(otp==generated_otp)
+			return true;
+		return false;
+	}
+
+}

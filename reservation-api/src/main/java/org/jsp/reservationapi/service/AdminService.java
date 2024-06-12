@@ -1,6 +1,7 @@
 package org.jsp.reservationapi.service;
 
 import java.util.Optional;
+import java.util.Random;
 
 import org.jsp.reservationapi.dao.AdminDao;
 import org.jsp.reservationapi.dto.AdminRequest;
@@ -10,6 +11,7 @@ import org.jsp.reservationapi.dto.ResponseStructure;
 import org.jsp.reservationapi.exception.AdminNotFoundException;
 import org.jsp.reservationapi.model.Admin;
 import org.jsp.reservationapi.util.AccountStatus;
+import org.jsp.reservationapi.util.VerifyOtp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -30,6 +32,8 @@ public class AdminService {
 	private EmailConfiguration emailConfiguration;
 	@Autowired
 	private LinkGenerationService linkGenerationService;
+	@Autowired
+	private VerifyOtp verifyOtp;
 
 	public ResponseEntity<ResponseStructure<AdminResponse>> saveAdmin(AdminRequest adminRequest,HttpServletRequest request) {
 		ResponseStructure<AdminResponse> structure = new ResponseStructure<>();
@@ -109,10 +113,14 @@ public class AdminService {
 			if(admin.getStatus().equals(AccountStatus.IN_ACTIVE.toString()))
 				throw new IllegalStateException("Plaese Activate your Account before Logging In!!!");
 			
-			String otp = RandomString.make(6);
+			Random random = new Random();
+			int otp = 100000 + random.nextInt(900000);
 			emailConfiguration.setSubject("One Time Verification Code");
 			emailConfiguration.setToAddress(email);
 			emailConfiguration.setText("Dear Admin, Enter the 6-digit code below to verify your identity: "+otp);
+			
+			verifyOtp.setGenerated_otp(otp);
+			
 			structure.setMessage(mailService.sendMail(emailConfiguration));
 			
 			structure.setData(mapToAdminResponse(dbAdmin.get()));
