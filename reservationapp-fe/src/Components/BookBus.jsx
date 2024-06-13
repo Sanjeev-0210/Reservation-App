@@ -10,6 +10,10 @@ const BookBus = () => {
     let params = useParams("")
     let [count, setcount] = useState(1);
 
+    let user = JSON.parse(localStorage.getItem("User"))
+
+
+    let[bus_id,setbus_id] = useState("")
     let [name, setname] = useState("")
     let [bus_no, setbus_no] = useState("");
     let [departure_date, setdeparture_date] = useState("");
@@ -20,6 +24,7 @@ const BookBus = () => {
     axios.get(`http://localhost:8080/api/bus/${params.id}`)
         .then((res) => {
             console.log(res.data.data);
+            setbus_id(res.data.data.id)
             setname(res.data.data.name)
             setbus_no(res.data.data.bus_no)
             setdeparture_date(res.data.data.departure_date)
@@ -60,6 +65,19 @@ const BookBus = () => {
     }
 
 
+    function bookticket(count){
+        axios.post(`http://localhost:8080/api/tickets/${bus_id}/${user.id}/${count}`)
+        .then((res)=>{
+            console.log(res.data.data);
+            alert("Bus Tickets Booked Successfully!!!")
+        })
+        .catch((err)=>{
+            console.log(err);
+            alert("Invalid Bus!!!")
+        })
+    }
+
+
     return (
         <div className="bookbus">
             <div className="img">
@@ -88,7 +106,7 @@ const BookBus = () => {
                 <div><h5>Amount to be Pay:</h5>
                 <p>₹ {count * cost_per_seat}</p></div>
 
-                <div><button className="btn btn-danger" >Proceed to Book</button></div>
+                <div><button className="btn btn-danger" onClick={()=>bookticket(count)}>Proceed to Book</button></div>
 
             </div>
         </div>

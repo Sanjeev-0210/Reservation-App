@@ -36,17 +36,17 @@ const AdminLogin = () => {
 
     
 
-
+    axios.get(`http://localhost:8080/api/admins/verify-otp/${otp}`)
+    .then((res)=>{
+        setverify(res.data.data)
+        console.log(res.data.data);
+    })
+    .catch((err)=>{
+        console.log(err);
+    })
     function login(e){
         e.preventDefault();
-        axios.get(`http://localhost:8080/api/admins/verify-otp/${otp}`)
-        .then((res)=>{
-            setverify(res.data.data)
-            console.log(res.data.data);
-        })
-        .catch((err)=>{
-            console.log(err);
-        })
+        
         if(verify!==null){
             alert("Logging Successfully!!!")
         navigate('/adminhomepage')

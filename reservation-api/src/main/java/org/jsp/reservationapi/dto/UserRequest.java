@@ -8,6 +8,7 @@ import lombok.Data;
 @Data
 public class UserRequest {
 
+	private int id;
 	@NotBlank(message = "Name is Mandatory")
 	private String name;
 	private long phone;

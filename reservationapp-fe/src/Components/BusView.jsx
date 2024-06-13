@@ -33,7 +33,7 @@ const BusView = () => {
                             <h2>Bus Name</h2>
                             <p>{item.name}</p> </div>
                         <div><h2>Seats Available</h2>
-                            <p><i>{item.no_of_seats}</i></p></div>
+                            <p><i>{item.available_seats}</i></p></div>
                         <div><h2>Departure date</h2>
                             <p>{item.departure_date}</p></div>
                             <div><h2>Bus Number</h2>

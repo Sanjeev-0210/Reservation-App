@@ -146,7 +146,7 @@ public class UserService {
 	}
 	
 	private UserResponse mapToUserResponse(User user) {
-		return UserResponse.builder().name(user.getName()).email(user.getEmail()).phone(user.getPhone()).age(user.getAge())
+		return UserResponse.builder().id(user.getId()).name(user.getName()).email(user.getEmail()).phone(user.getPhone()).age(user.getAge())
 				.gender(user.getGender()).password(user.getPassword()).build();
 	}
 

@@ -3,8 +3,9 @@ import React from "react";
 const Protect = ({Child}) => {
 
     let x = localStorage.getItem("Admin")
+    let y = localStorage.getItem("User")
 
-    function verify() {
+    function verifyx() {
         if (x != null){
             return true
         }   
@@ -12,9 +13,20 @@ const Protect = ({Child}) => {
             return false;
         }
     }
+
+    // function verifyy() {
+    //     if (y != null){
+    //         return true
+    //     }   
+    //     else{
+    //         return false;
+    //     }
+    // }
+
     return (
         <div className="protect">
-            {verify()?<Child/>:<Navigate to='/adminlogin'/>}
+            {verifyx()?<Child/>:<Navigate to='/adminlogin'/>}
+            {/* {verifyy()?<Child/>:<Navigate to='/'/>} */}
         </div>
     );
 }
