@@ -22,6 +22,10 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     list-style-type: none; 
     margin: 5px 0;
+    color: rgb(182, 181, 181);
+}
+.sub-link li:hover{
+    color: white;
 }
 
 

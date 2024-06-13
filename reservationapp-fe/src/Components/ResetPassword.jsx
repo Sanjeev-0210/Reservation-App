@@ -6,6 +6,7 @@ const ResetPassword = () => {
 
     function reset(){
         if(newpwd===confirmpwd){
+            
             alert("Password reset successfully!!")
         }
         else{
