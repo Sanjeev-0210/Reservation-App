@@ -21,8 +21,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 import jakarta.validation.Valid;
 
 @CrossOrigin
@@ -76,10 +78,13 @@ public class AdminController {
 	}
 	
 	@GetMapping("/verify-link")
-	public void verifyLink(@RequestParam String token, HttpServletResponse response) {
+	public void verifyLink(@RequestParam String token,HttpServletRequest request, HttpServletResponse response) {
 		AdminResponse adminResponse =  adminService.verifyLink(token);
 		if(adminResponse != null) {
 			try {
+				HttpSession session = request.getSession();
+				session.setAttribute("admin", adminResponse);
+						response.addCookie(new Cookie("admin", adminResponse.getEmail()));
 				response.sendRedirect("http://localhost:3000/reset-password");
 			}
 			catch (IOException e) {

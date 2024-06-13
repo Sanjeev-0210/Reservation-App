@@ -8,26 +8,26 @@ const ForgotPassword = () => {
 
     let [email, setemail] = useState("")
 
-    const resetpassword =  (e) => {
+    const resetpassword = (e) => {
         e.preventDefault();
 
         try {
-         axios.post(`http://localhost:8080/api/admins/forgot-password?email=${email}`)
+            axios.post(`http://localhost:8080/api/admins/forgot-password?email=${email}`)
                 .then((response1) => {
                     console.log(response1);
                     alert("Reset Password link has been sent to entered Mail Id!!!")
                 })
                 .catch("Invalid Email Id!!!")
 
-            axios.post(`http://localhost:8080/api/users/forgot-password?email=${email}`)
-                .then((response2) => {
-                    console.log(response2);
-                    alert("Reset Password link has been sent to entered Mail Id!!!")
-                })
-                .catch("Invalid Email Id!!!")
+            // axios.post(`http://localhost:8080/api/users/forgot-password?email=${email}`)
+            //     .then((response2) => {
+            //         console.log(response2);
+            //         alert("Reset Password link has been sent to entered Mail Id!!!")
+            //     })
+            //     .catch("Invalid Email Id!!!")
         } catch (error) {
             console.log(error);
-        } 
+        }
 
     }
     return (
