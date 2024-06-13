@@ -1,32 +1,21 @@
 import { Navigate } from "react-router-dom";
-import React from "react";
-const Protect = ({Child}) => {
+import React, { useEffect, useState } from "react";
 
-    let x = localStorage.getItem("Admin")
-    let y = localStorage.getItem("User")
+const Protect = ({ Child, role }) => {
+    const [isVerified, setIsVerified] = useState(false);
 
-    function verifyx() {
-        if (x != null){
-            return true
-        }   
-        else{
-            return false;
+    useEffect(() => {
+        const admin = localStorage.getItem("Admin");
+        const user = localStorage.getItem("User");
+
+        if ((role === "admin" && admin) || (role === "user" && user)) {
+            setIsVerified(true);
         }
-    }
-
-    // function verifyy() {
-    //     if (y != null){
-    //         return true
-    //     }   
-    //     else{
-    //         return false;
-    //     }
-    // }
+    }, [role]);
 
     return (
         <div className="protect">
-            {verifyx()?<Child/>:<Navigate to='/adminlogin'/>}
-            {/* {verifyy()?<Child/>:<Navigate to='/'/>} */}
+            {isVerified ? <Child /> : <Navigate to="/" />}
         </div>
     );
 }

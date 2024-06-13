@@ -28,7 +28,7 @@ function App() {
         <Route path='/reset-password' element={<ResetPassword/>}/>
         <Route path='/adminhomepage/*' element={<Protect Child={AdminHomePage}/>}/>
         {/* <Route path='/adminhomepage/*' element={<AdminHomePage/>}/> */}
-        <Route path='/userhomepage/*' element={<UserHomePage/>}/>
+        <Route path='/userhomepage/*' element={<Protect Child={UserHomePage}/>}/>
        </Routes>
        </BrowserRouter>
     </div>
