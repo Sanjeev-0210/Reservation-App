@@ -15,9 +15,9 @@ const UserNavDropdown = () => {
     return ( 
         <div className="usernavdropdown">
             <DropdownButton id="dropdown-basic-button" title="Account">
-      <Dropdown.Item><Link className='item' to='/userhomepage/addbus'>Add Bus</Link></Dropdown.Item>
+      <Dropdown.Item><Link className='item' to='/userhomepage'>Edit Profile</Link></Dropdown.Item>
       <Dropdown.Item ><Link className='item' to='/userhomepage/busview'>Bus Lists</Link></Dropdown.Item>
-      <Dropdown.Item href="#/action-3" className='item'>Edit Profile</Dropdown.Item>
+      <Dropdown.Item href="#/action-3" className='item'>Booking History</Dropdown.Item>
       <Dropdown.Item><Link className='item' onClick={logout}>Log out</Link></Dropdown.Item>
     </DropdownButton>
         </div>

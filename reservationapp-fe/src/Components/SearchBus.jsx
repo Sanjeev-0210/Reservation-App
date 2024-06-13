@@ -2,8 +2,11 @@ import SearchIcon from '@mui/icons-material/Search';
 import axios from 'axios';
 import { useState } from 'react';
 import '../Styles/SearchBus.css'
+import { useNavigate } from 'react-router-dom';
 
 const SearchBus = () => {
+
+    let navigate = useNavigate("")
 
     let [from_loc, setfrom_loc] = useState("")
     let [to_loc, setto_loc] = useState("")
@@ -37,6 +40,11 @@ const SearchBus = () => {
                 setLoading(false)
             })
     }
+
+    function bookseat(id){
+        navigate(`/userhomepage/bookbus/${id}`)
+ 
+     }
 
 
 
@@ -73,7 +81,7 @@ const SearchBus = () => {
                         <div><h2>To Location</h2>
                             <p>{item.to_loc}</p></div>
                         
-                        <div><button className="btn btn-primary">Book Seats</button></div>
+                        <div><button onClick={()=>bookseat(item.id)} className="btn btn-primary">Book Seats</button></div>
 
                     </div>
                 )

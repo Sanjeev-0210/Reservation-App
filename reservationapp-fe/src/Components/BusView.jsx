@@ -1,10 +1,12 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import '../Styles/BusView.css'
+import { useNavigate } from "react-router-dom";
 
 const BusView = () => {
 
     let [bus, setbus] = useState([])
+    let navigate = useNavigate("")
 
     useEffect(() => {
         axios.get('http://localhost:8080/api/bus')
@@ -16,6 +18,11 @@ const BusView = () => {
                 console.log(err);
             })
     }, [])
+
+    function bookseat(id){
+       navigate(`/userhomepage/bookbus/${id}`)
+
+    }
 
     return (
         <div className="busview">
@@ -36,7 +43,7 @@ const BusView = () => {
                         <div><h2>To Location</h2>
                             <p>{item.to_loc}</p></div>
                         
-                        <div><button className="btn btn-danger">Book Seats</button></div>
+                        <div><button className="btn btn-danger" onClick={()=>bookseat(item.id)} >Book Seats</button></div>
 
                     </div>
                 )
