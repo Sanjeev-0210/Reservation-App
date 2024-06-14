@@ -21,6 +21,10 @@ public class Ticket {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
+	@Column(nullable = false)
+	private String source;
+	@Column(nullable = false)
+	private String destination;
 	@CreationTimestamp
 	private LocalDate dateAndTimeOfBooking;
 	@Column(nullable = false)

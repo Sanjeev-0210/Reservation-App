@@ -1,10 +1,12 @@
 package org.jsp.reservationapi.service;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.jsp.reservationapi.dao.BusDao;
 import org.jsp.reservationapi.dao.TicketDao;
 import org.jsp.reservationapi.dao.UserDao;
+import org.jsp.reservationapi.dto.ResponseStructure;
 import org.jsp.reservationapi.dto.TicketResponse;
 import org.jsp.reservationapi.exception.BusNotFoundException;
 import org.jsp.reservationapi.exception.UserNotFoundException;
@@ -14,6 +16,8 @@ import org.jsp.reservationapi.model.User;
 import org.jsp.reservationapi.util.AccountStatus;
 import org.jsp.reservationapi.util.TicketStatus;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -44,6 +48,8 @@ public class TicketService {
 		ticket.setBus(dbBus);// Assigning Bus to ticket
 		ticket.setUser(dbUser);// Assigning User to ticket
 		ticket.setNumberOfSeatsBooked(numberOfSeats);
+		ticket.setDestination(dbBus.getTo_loc());
+		ticket.setSource(dbBus.getFrom_loc());
 		dbBus.getBookedTickets().add(ticket);// Adding ticket to bus
 		dbUser.getTickets().add(ticket);// Adding Ticket to User
 		dbBus.setAvailable_seats(dbBus.getAvailable_seats() - numberOfSeats);
@@ -71,6 +77,18 @@ public class TicketService {
 		ticketResponse.setUsername(user.getName());
 		return ticketResponse;
 
+	}
+
+	public ResponseEntity<ResponseStructure<List<Ticket>>> findTicketByUserID(int user_id) {
+		ResponseStructure<List<Ticket>> structure = new ResponseStructure<>();
+		List<Ticket> dbTickets = ticketDao.findTicketByUserID(user_id);
+		if(dbTickets.isEmpty()) {
+			throw new UserNotFoundException("Invalid User ID!!!");
+		}
+		structure.setMessage("List of Tickets Found in the User ID: "+user_id);
+		structure.setData(dbTickets);
+		structure.setStatusCode(HttpStatus.OK.value());
+		return ResponseEntity.status(HttpStatus.OK).body(structure);
 	}
 
 }

@@ -31,8 +31,8 @@ const AdminFooter = () => {
                         <Link><li>Privacy policy</li></Link>
                         <Link><li>FAQ</li></Link>
                         <Link><li>Blog</li></Link>
-                        <Link><li>Admin registration</li></Link>
-                        <Link><li>User registration</li></Link>
+                        <Link to='/adminsignup'><li>Admin registration</li></Link>
+                        <Link to='/usersignup'><li>User registration</li></Link>
                         <Link><li>Insurance partner</li></Link>
                         <Link><li>User agreement</li></Link>
                         <Link><li>Bus Timetable</li></Link>
