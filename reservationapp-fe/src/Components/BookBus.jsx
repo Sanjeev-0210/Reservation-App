@@ -1,6 +1,6 @@
 import axios from "axios";
-import { useState } from "react";
-import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import '../Styles/BookBus.css'
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
@@ -8,6 +8,7 @@ import RemoveIcon from '@mui/icons-material/Remove';
 const BookBus = () => {
 
     let params = useParams("")
+    let navigate = useNavigate("")
     let [count, setcount] = useState(1);
 
     let user = JSON.parse(localStorage.getItem("User"))
@@ -21,7 +22,8 @@ const BookBus = () => {
     let [to_loc, setto_loc] = useState("");
     let [cost_per_seat, setcost_per_seat] = useState("");
 
-    axios.get(`http://localhost:8080/api/bus/${params.id}`)
+    useEffect(()=>{
+        axios.get(`http://localhost:8080/api/bus/${params.id}`)
         .then((res) => {
             console.log(res.data.data);
             setbus_id(res.data.data.id)
@@ -35,6 +37,7 @@ const BookBus = () => {
         .catch((err) => {
             console.log(err);
         })
+    })
 
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -68,8 +71,9 @@ const BookBus = () => {
     function bookticket(count){
         axios.post(`http://localhost:8080/api/tickets/${bus_id}/${user.id}/${count}`)
         .then((res)=>{
-            console.log(res.data.data);
+            // console.log(res.data.data);
             alert("Bus Tickets Booked Successfully!!!")
+            navigate('/userhomepage')
         })
         .catch((err)=>{
             console.log(err);

@@ -1,0 +1,70 @@
+.bookinghistory{
+    background-color: rgba(255, 255, 255, 0.822);
+    padding: 50px;
+    margin: 40px 0;
+    border-radius: 10px;
+}
+span{
+    color: red;
+}
+#container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#user_detail{
+    font-size: 18px;
+    text-align: left;
+    border: 1px solid black;
+    height: max-content;
+    padding: 20px;
+    border-radius: 5px;
+}
+#user_detail h2{
+    border-bottom: 2px dotted black;
+    width: max-content;
+}
+#user_detail p{
+    margin: 15px 10px;
+}
+.img{
+    width: 70%;
+    margin-bottom: 40px;
+}
+.img img{
+    height: 400px;
+    width: 85%;
+    border-radius: 8px;
+}
+.img button {
+    position: relative;
+   
+    background-color: rgba(255, 255, 255, 0.762);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1.5em;
+    z-index: 100;
+  }
+  
+.img button.prev {
+    left: 15px;
+  }
+  
+.img button.next {
+    right: 15px;
+  }
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   text-align: left; 
+   box-shadow: 0 0 4px rgb(0, 0, 0);
+   margin: 20px 0;
+   padding: 30px;
+   width: 100%;
+   background-color: rgba(255, 255, 255, 0.119);
+   font-size: 18px;
+}

@@ -13,7 +13,7 @@ const UserDashBoard = () => {
             <div className="view">
             <SearchBus/>
             <Routes>
-                <Route path='/' element={<BusView/>}/>
+                {/* <Route path='/' element={<BusView/>}/> */}
                 <Route path='/busview' element={<BusView/>}/>
            </Routes>
             </div>

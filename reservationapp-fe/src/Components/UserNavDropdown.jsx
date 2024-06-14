@@ -4,24 +4,25 @@ import DropdownButton from 'react-bootstrap/DropdownButton';
 
 const UserNavDropdown = () => {
 
-    let navigate = useNavigate("");
+  let navigate = useNavigate("");
 
-  function logout(e){
+  function logout(e) {
     e.preventDefault();
     alert("You have been Logged Out Successfully!!!")
     navigate('/userlogin')
   }
 
-    return ( 
-        <div className="usernavdropdown">
-            <DropdownButton id="dropdown-basic-button" title="Account">
-      <Dropdown.Item><Link className='item' to='/userhomepage'>Edit Profile</Link></Dropdown.Item>
-      <Dropdown.Item ><Link className='item' to='/userhomepage/busview'>Bus Lists</Link></Dropdown.Item>
-      <Dropdown.Item href="#/action-3" className='item'>Booking History</Dropdown.Item>
-      <Dropdown.Item><Link className='item' onClick={logout}>Log out</Link></Dropdown.Item>
-    </DropdownButton>
-        </div>
-     );
+  return (
+    <div className="usernavdropdown">
+      <DropdownButton id="dropdown-basic-button" title="Account">
+        <Dropdown.Item><Link className='item' to='/userhomepage'>Edit Profile</Link></Dropdown.Item>
+        <Dropdown.Item ><Link className='item' to='/userhomepage/busview'>Bus Lists</Link></Dropdown.Item>
+        <Dropdown.Item ><Link className='item' to='/userhomepage/bookinghistory'>Booking History</Link></Dropdown.Item>
+        <Dropdown.Item><Link className='item' onClick={logout}>Log out</Link></Dropdown.Item>
+      </DropdownButton>
+
+    </div>
+  );
 }
- 
+
 export default UserNavDropdown;
