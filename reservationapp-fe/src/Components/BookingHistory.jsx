@@ -58,7 +58,7 @@ const BookingHistory = () => {
                   return(
                    <div>
                     
-                    <div className="content">
+                    <div className="content1">
                 <p><b>Source: </b> <br /> {x.source}</p>
                 <p><b>Destination: </b> <br /> {x.destination}</p>
                 <p><b>Date of Journey:</b> <br /> {x.dateAndTimeOfBooking}</p>
