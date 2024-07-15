@@ -1,5 +1,0 @@
-package org.jsp.reservationapi.util;
-
-public enum TicketStatus {
-
-}

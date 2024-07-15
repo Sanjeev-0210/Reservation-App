@@ -1,5 +1,0 @@
-package org.jsp.reservationapi.controller;
-
-public class TicketController {
-
-}

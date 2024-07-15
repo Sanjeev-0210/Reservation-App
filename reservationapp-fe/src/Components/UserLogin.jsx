@@ -30,7 +30,7 @@ const UserLogin = () => {
             })
 
             .catch((err) => {
-                alert("Login Failed!!!")
+                alert("Invalid Email or Password!!!")
             })
     }
 
